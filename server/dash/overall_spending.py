@@ -16,13 +16,13 @@ region_report = os.path.join(data_dir, "spending_locations.csv")
 data = pd.read_csv(facebook_report)
 ld = pd.read_csv(region_report)
 
+#TODO: ADD THIS DATA WRANGLING IN A DIFFERENT FILE
 ld['Amount Spent (USD)'] = ld['Amount Spent (USD)'].replace('≤100', 0) #hacky fix
 ld['Amount Spent (USD)'] = ld['Amount Spent (USD)'].astype(str).astype(int) #convert to int
 ld = ld.sort_values(by=['Amount Spent (USD)'], ascending=False)
 
 data['Amount Spent (USD)'] = data['Amount Spent (USD)'].replace("≤100", 0)
 data['Amount Spent (USD)'] = data['Amount Spent (USD)'].astype(str).astype(int)
-
 
 data['Number of Ads in Library'] = data['Number of Ads in Library'].apply(lambda x: re.sub("\D", "", x))
 data['Number of Ads in Library'] = data['Number of Ads in Library'].astype(str).astype(int)
@@ -104,4 +104,4 @@ def update(input_val):
         return update_fig(input_val, df_new)
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
