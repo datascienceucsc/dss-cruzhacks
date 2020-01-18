@@ -108,6 +108,9 @@
                   tempora enim qui accusamus, eius tempore ullam cumque quaerat.
                 </p>
               </div>
+              <div class="container">
+                {% block content %}{% endblock %}
+              </div>
             </div>
           </div>
 
@@ -180,21 +183,7 @@
       </div>
       <!-- mainCode -->
     </header>
-    <main role="main" class="container">
-      <div class="row">
-        <div class="col-md">
-          {% with messages = get_flashed_messages(with_categories=true) %} {% if
-          messages %} {% for category, message in messages %}
-          <div class="alert alert-{{ category }}">
-            {{ message }}
-          </div>
-          {% endfor %} {% endif %} {% endwith %} {% block content %}{% endblock
-          %}
-        </div>
-      </div>
-      <div id="footer-spacer"></div>
-    </main>
-    <footer class="card-footer text-muted">
+   <footer class="card-footer text-muted">
       <div class="container">
         <small>
           Copyright &copy; 2020, TransparencyUSA
