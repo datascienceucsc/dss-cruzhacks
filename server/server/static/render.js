@@ -31,3 +31,8 @@ document.querySelector("#nav-duoCandidate").addEventListener("click", () => {
   hideAll("#duoCandidate");
   document.querySelector("#nav-duoCandidate").classList.add("active");
 });
+
+document.querySelector("#nav-multiCandidate").addEventListener("click", () => {
+  hideAll("#multiCandidate");
+  document.querySelector("#nav-multiCandidate").classList.add("active");
+});

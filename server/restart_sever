@@ -1,0 +1,12 @@
+#!/bin/bash
+
+pkill screen
+
+sudo pwd
+
+cd "${HOME}/dss-cruzhacks/server"  
+
+VENVS="${HOME}/.local/share/virtualenvs"
+
+screen -dm -L -Logfile "${HOME}/server.log" -S "main-server" sudo "${VENVS}"/server*/bin/python app.py
+
