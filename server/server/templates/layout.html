@@ -1,70 +1,167 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='main.css') }}"
+    />
     {% if title %}
-        <title>Transparency USA - {{ title }}</title>
+    <title>Transparency USA - {{ title }}</title>
     {% else %}
-        <title>Transparency USA</title>
+    <title>Transparency USA</title>
     {% endif %}
   </head>
+
   <body>
     <header class="site-header">
-      <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="container">
-          <a class="navbar-brand mr-4" href="/">Transparency USA</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarToggle">
-            <!-- Navbar Left Side -->
-              <div class="navbar-nav mr-auto">
-                <a class="nav-item nav-link" href="#"></a>
+      <!-- Code Pasted -->
+      <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+          <!-- <div class="sidebar-heading">Start Bootstrap</div> -->
+          <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action bg-light"
+              >Dashboard</a
+            >
+            <a href="#" class="list-group-item list-group-item-action bg-light"
+              >Shortcuts</a
+            >
+            <a href="#" class="list-group-item list-group-item-action bg-light"
+              >Overview</a
+            >
+            <a href="#" class="list-group-item list-group-item-action bg-light"
+              >Events</a
+            >
+            <a href="#" class="list-group-item list-group-item-action bg-light"
+              >Profile</a
+            >
+            <a href="#" class="list-group-item list-group-item-action bg-light"
+              >Status</a
+            >
+          </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <nav
+            class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
+          >
+            <button class="navbar-toggler" id="menu-toggle">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                First
               </div>
-            <!-- Navbar Right Side -->
-            <div class="navbar-nav">
+              <div class="col-sm">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                First1
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                First2
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
             </div>
           </div>
         </div>
-      </nav>
+        <!-- /#page-content-wrapper -->
+      </div>
+      <!-- Code pasted -->
     </header>
     <main role="main" class="container">
       <div class="row">
         <div class="col-md">
-          {% with messages = get_flashed_messages(with_categories=true) %}
-            {% if messages %}
-              {% for category, message in messages %}
-                <div class="alert alert-{{ category }}">
-                  {{ message }}
-                </div>
-              {% endfor %}
-            {% endif %}
-          {% endwith %}
-          {% block content %}{% endblock %}
+          {% with messages = get_flashed_messages(with_categories=true) %} {% if
+          messages %} {% for category, message in messages %}
+          <div class="alert alert-{{ category }}">
+            {{ message }}
+          </div>
+          {% endfor %} {% endif %} {% endwith %} {% block content %}{% endblock
+          %}
         </div>
       </div>
-    <div id="footer-spacer"></div>
+      <div id="footer-spacer"></div>
     </main>
     <footer class="card-footer text-muted">
-        <div class="container">
-            <small>
-                Copyright &copy; 2020, TransparencyUSA
-            </small>
-        </div>
+      <div class="container">
+        <small>
+          Copyright &copy; 2020, TransparencyUSA
+        </small>
+      </div>
     </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script></body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="{{ url_for('static', filename='render.js') }}" ></script>
+    <!-- Added Script -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+    <!-- Added Script -->
+  </body>
 </html>
-
