@@ -1,6 +1,6 @@
 # dss-cruzhacks
 
-## transparency-usa.online
+## transparencyusa.tech
 
 The number one source for transparency, brah
 
