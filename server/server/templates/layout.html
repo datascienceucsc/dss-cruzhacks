@@ -31,91 +31,94 @@
 
   <body>
     <header class="site-header">
-      <!-- Code Pasted -->
       <div class="d-flex" id="wrapper">
-        <!-- Sidebar -->
-        <div class="bg-light border-right" id="sidebar-wrapper">
-          <!-- <div class="sidebar-heading">Start Bootstrap</div> -->
-          <div class="list-group list-group-flush">
-            <a href="#" id="nav-dashboard" class="list-group-item list-group-item-action bg-light"
-              >Dashboard</a
-            >
-            <a href="#" id="nav-shortcuts" class="list-group-item list-group-item-action bg-light"
-              >Shortcuts</a
-            >
-            <a href="#" id="nav-overview" class="list-group-item list-group-item-action bg-light"
-              >Overview</a
-            >
-            <a href="#" id="nav-events" class="list-group-item list-group-item-action bg-light"
-              >Events</a
-            >
-            <a href="#" id="nav-profile" class="list-group-item list-group-item-action bg-light"
-              >Profile</a
-            >
-            <a href="#" id="nav-status" class="list-group-item list-group-item-action bg-light"
-              >Status</a
-            >
-          </div>
-        </div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
         <div id="page-content-wrapper">
-          <nav
-            class="navbar navbar-light bg-light border-bottom"
-          >
-            <button class="navbar-toggler" id="menu-toggle">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Transparency</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
               <span class="navbar-toggler-icon"></span>
             </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" id="nav-home" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="nav-singleCandidate" href="#"
+                    >Single</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="nav-duoCandidate" href="#">Dual</a>
+                </li>
+              </ul>
+            </div>
           </nav>
 
-          <div class="container display-box" id="dashboard">
+          <div class="container display-box" id="home">
+            <div class="container display-box" id="mainPicture">
+
+            </div>
+            <div class="jumbotron">
+              <h1 class="display-4 text-center">Transparency</h1>
+              <hr class="my-4" />
+              <p class="lead text-center">
+                TRUMP 2020
+              </p>
+            </div>
+          </div>
+
+          <div class="container display-box" id="singleCandidate">
             <div class="row">
               <div class="col-sm">
-                First
+                <div class="container-fluid bg-dark text-white"></div>
               </div>
               <div class="col-sm">
-                One of three columns
+                <div class="container-fluid bg-dark text-white"></div>
               </div>
               <div class="col-sm">
-                One of three columns
+                <div class="container-fluid bg-dark text-white"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg">
+                <div class="container-fluid bg-dark text-white"></div>
               </div>
             </div>
           </div>
 
-          <div class="container display-box" id="shortcuts">
+          <div class="container display-box" id="duoCandidate">
             <div class="row">
               <div class="col-sm">
-                First1
+                <div class="container-fluid bg-dark text-white"></div>
               </div>
               <div class="col-sm">
-                One of three columns
+                <div class="container-fluid bg-dark text-white"></div>
               </div>
               <div class="col-sm">
-                One of three columns
+                <div class="container-fluid bg-dark text-white"></div>
               </div>
             </div>
-          </div>
-
-          <div class="container display-box" id="overview">
             <div class="row">
-              <div class="col-sm">
-                First2
-              </div>
-              <div class="col-sm">
-                One of three columns
-              </div>
-              <div class="col-sm">
-                One of three columns
+              <div class="col-lg">
+                <div class="container-fluid bg-dark text-white"></div>
               </div>
             </div>
           </div>
         </div>
-        <!-- /#page-content-wrapper -->
       </div>
-      <!-- Code pasted -->
+      <!-- mainCode -->
     </header>
-    <main role="main" class="container">
+    <!-- <main role="main" class="container">
       <div class="row">
         <div class="col-md">
           {% with messages = get_flashed_messages(with_categories=true) %} {% if
@@ -128,7 +131,7 @@
         </div>
       </div>
       <div id="footer-spacer"></div>
-    </main>
+    </main> -->
     <footer class="card-footer text-muted">
       <div class="container">
         <small>
@@ -154,7 +157,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="{{ url_for('static', filename='render.js') }}" ></script>
+    <script src="{{ url_for('static', filename='render.js') }}"></script>
     <!-- Added Script -->
     <script>
       $("#menu-toggle").click(function(e) {
