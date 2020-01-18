@@ -2,16 +2,23 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 import json
+import os
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
+from dash.dependencies import Input, Output
 
-def get_data(location):
-    data = pd.read_csv(location)
-    # edit data
-    return data
+from config import data_dir
 
-data = get_data("/Users/jmlehrer/Cruzhacks/dss-cruzhacks/data/facebook_lifelong_report.csv")
+facebook_report = os.path.join(data_dir, "facebook_lifelong_report.csv")
+region_report = os.path.join(data_dir, "spending_locations.csv")
+data = pd.read_csv(facebook_report)
+ld = pd.read_csv(region_report)
+
+ld['Amount Spent (USD)'] = ld['Amount Spent (USD)'].replace('≤100', 0) #hacky fix
+ld['Amount Spent (USD)'] = ld['Amount Spent (USD)'].astype(str).astype(int) #convert to int
+ld = ld.sort_values(by=['Amount Spent (USD)'], ascending=False)
+
 data['Amount Spent (USD)'] = data['Amount Spent (USD)'].replace("≤100", 0)
 data['Amount Spent (USD)'] = data['Amount Spent (USD)'].astype(str).astype(int)
 
@@ -23,59 +30,54 @@ aggregation_functions = {'Amount Spent (USD)': 'sum', 'Number of Ads in Library'
 df_new = data_max.groupby('Page Name', as_index=False).aggregate(aggregation_functions)
 df_new = df_new.sort_values(by=['Amount Spent (USD)'], ascending=False)
 
-data = go.Bar(name='Amount Spent (USD)', x=df_new['Page Name'], y=df_new['Amount Spent (USD)'])
+def update_fig(col, dataframe):
+    data = go.Bar(name='Amount Spent (USD)', x=dataframe['Page Name'], y=dataframe[col])
+    layout = go.Layout(
+        title = {
+            'text':'Political Ad Spending on Facebook',
+            'y': .9,        #Bring down from very top of graph
+            'x': .5,        #Middle of graph horizontally
+            'xanchor':'center',
+            'yanchor':'top'
+        },
+        xaxis_title = 'Political Organization',
+        yaxis_title = 'Amount Spent on Advertising (USD)',
+        template = 'plotly_dark',
+    )
+    fig = go.Figure(data=data, layout=layout)
+    return fig
 
 data2 = go.Bar(name='Number of Ads in Library', x=data_max['Page Name'], y = data_max['Number of Ads in Library'])
 
-layout = go.Layout(
-    title = {
-        'text':'Political Ad Spending on Facebook',
-        'y': .9,        #Bring down from very top of graph
-        'x': .5,        #Middle of graph horizontally
-        'xanchor':'center',
-        'yanchor':'top'
-    },
-    # xax = {
-    #     'categoryorder': 'array',
-    #     'categoryarray': [x for _, x in sorted(zip(df_new['Page Name'], df_new['Amount Spent (USD)']))]
-    # },
-    xaxis_title = 'Political Organization',
-    yaxis_title = 'Amount Spent on Advertising (USD)',
-)
-
-layout2 = go.Layout(
-    title = {
-        'text':'Number of Unique Ads',
-        'y':0.9,
-        'x':0.5,
-        'xanchor':'center',
-        'yanchor':'top'
-    },
-    yaxis={
-        'categoryorder':'category ascending' #not doing anything
-    },
-    xaxis_title = 'Political Organization',
-    yaxis_title = 'Number of Ads in Library'
-)
-
-fig = go.Figure(data=data, layout=layout)
-
 app = dash.Dash()
 app.layout = html.Div(children=[
-    html.H1(children='Spending by Candidate'),
+    dcc.Dropdown(
+        id='dropdown',
+        options = [
+            {'label' : 'Total Spend on Facebook Ads', 'value' : 'Amount Spent (USD)'},
+            {'label' : 'Total Number of Ads in Library', 'value' : 'Number of Ads in Library'}
+        ],
+        value = 'Amount Spent (USD)'
+    ),
     dcc.Graph(
-        figure=fig
-        # figure={
-        #     'data' : [
-        #         {'x':data_max['Page Name'], 'y':data_max['Amount Spent (USD)'], 'type':'bar'}
-        #     ],
-        #     'layout' : {
-        #         'xaxis_title' : 'Organization Name',
-        #         'yaxis_title' : 'Total Spending (All Campaigns)'
-        #     }
-        # }
+        id = 'total_spent_chart',
+        figure = update_fig('Amount Spent (USD)', df_new),
+        config = {
+            'displayModeBar' : False
+        },
     )
 ])
+
+@app.callback(
+    Output('total_spent_chart', 'figure'),
+    [Input(component_id='dropdown', component_property='value')]
+)
+
+def update(input_val):
+    if (input_val == 'Number of Ads in Library'): #actual bad code lmao
+        return update_fig(input_val, data_max)
+    else:
+        return update_fig(input_val, df_new)
 
 if __name__ == '__main__':
     app.run_server(debug=True)
