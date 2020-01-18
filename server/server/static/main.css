@@ -18,20 +18,42 @@ div.container-fluid {
   height: 400px;
 }
 
-.jumbotron{
+button.navbar-toggler {
+  outline: 0;
+}
+
+a.list-group-item {
+  outline: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.jumbotron {
   background: none;
 }
 
-.nav-link{
+.nav-link {
   border-top: none;
 }
 
-.navbar-brand{
+.navbar-brand {
   outline: 0;
 }
 
-button.navbar-toggler{
-  outline: 0;
+.americaRed {
+  color: #fa163f !important; 
+}
+
+.americaWhite {
+  color: #e4f9ff !important;
+}
+
+.americaBlue {
+  color: #12cad6 !important;
+}
+
+.americaDarkBlue {
+  color: #0fabbc !important;
 }
 
 .jumbotron {
@@ -42,16 +64,10 @@ button.navbar-toggler{
   min-height: 100vh;
 }
 
-#home{
+#home {
   max-width: none;
   padding-left: 0px;
   padding-right: 0px;
-}
-
-a.list-group-item {
-  outline: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 #menu-toggle {
@@ -63,7 +79,7 @@ a.list-group-item {
   background-color: #4e5051;
 }
 
-#mainPicture{
+#mainPicture {
   height: 500px;
   background: url("../static/imgs/election.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -74,7 +90,6 @@ a.list-group-item {
 }
 
 @media (min-width: 768px) {
-
   #page-content-wrapper {
     min-width: 0;
     width: 100%;

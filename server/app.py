@@ -1,5 +1,4 @@
 import sys
-import click
 
 from server import create_app
 
