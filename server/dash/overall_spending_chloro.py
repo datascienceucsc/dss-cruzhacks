@@ -24,7 +24,7 @@ def update_fig(col, dataframe, str):
         colorbar = {
             'xpad' : 0
         },
-        text = dataframe['Country_Subdivision_Primary']
+        text = None
     )
     layout = go.Layout(
         geo_scope='usa', # limite map scope to USA
@@ -36,18 +36,6 @@ def update_fig(col, dataframe, str):
 app = dash.Dash()
 
 app.layout = html.Div(
-    # style = {
-    #
-    #   #  '.dash-debug-alert-label' {
-    #   #    display: none;
-    #   #  }
-    #   #
-    #   #  .dash-debug-menu {
-    #   #    display: none;
-    #   # }
-    #
-    #
-    # },
     children=[
         dcc.Dropdown(
             id='dropdown',
