@@ -8,6 +8,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 import re
 from dash.dependencies import Input, Output
+
 from config import data_dir
 
 geo_spend_loc = os.path.join(data_dir, "per_capita_spending_JL.csv")
@@ -20,8 +21,11 @@ def update_fig(col, dataframe, str):
         locationmode = 'USA-states', # set of locations match entries in `locations`
         colorscale = 'Blues',
         colorbar_title = str,
+        colorbar = {
+            'xpad' : 0
+        },
+        text = dataframe['Country_Subdivision_Primary']
     )
-
     layout = go.Layout(
         geo_scope='usa', # limite map scope to USA
     )
@@ -31,23 +35,37 @@ def update_fig(col, dataframe, str):
 
 app = dash.Dash()
 
-app.layout = html.Div(children=[
-    dcc.Dropdown(
-        id='dropdown',
-        options = [
-            {'label' : 'Total Money Spent per State', 'value' : 'Spend_USD'},
-            {'label' : 'Spending per Capita', 'value' : 'spending_per_capita'},
-        ],
-        value = 'Spend_USD',
-    ),
-    dcc.Graph(
-        id = 'total_spent_chart',
-        figure = update_fig('Spend_USD', data, 'Overall Spending per State ($)'),
-        config = {
-            'displayModeBar' : False
-        },
-    )
-])
+app.layout = html.Div(
+    # style = {
+    #
+    #   #  '.dash-debug-alert-label' {
+    #   #    display: none;
+    #   #  }
+    #   #
+    #   #  .dash-debug-menu {
+    #   #    display: none;
+    #   # }
+    #
+    #
+    # },
+    children=[
+        dcc.Dropdown(
+            id='dropdown',
+            options = [
+                {'label' : 'Total Money Spent per State', 'value' : 'Spend_USD'},
+                {'label' : 'Spending per Capita', 'value' : 'spending_per_capita'},
+            ],
+            value = 'Spend_USD',
+        ),
+        dcc.Graph(
+            id = 'total_spent_chart',
+            figure = update_fig('Spend_USD', data, 'Overall Spending per State ($)'),
+            config = {
+                'displayModeBar' : False,
+                'editable':False,
+            }
+        )
+    ])
 
 @app.callback(
     Output('total_spent_chart', 'figure'),
@@ -60,6 +78,5 @@ def update(input_val):
     else:
         return update_fig(input_val, data, 'Spending per Capita ($)')
 
-
 if __name__=='__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
