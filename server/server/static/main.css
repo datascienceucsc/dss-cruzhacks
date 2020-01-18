@@ -18,8 +18,12 @@ div.container-fluid {
   height: 400px;
 }
 
+.jumbotron{
+  background: none;
+}
+
 .nav-link{
-  border-top: solid #333 1px;
+  border-top: none;
 }
 
 .navbar-brand{
@@ -38,6 +42,12 @@ button.navbar-toggler{
   min-height: 100vh;
 }
 
+#home{
+  max-width: none;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 a.list-group-item {
   outline: 0;
   padding-top: 1rem;
@@ -53,9 +63,15 @@ a.list-group-item {
   background-color: #4e5051;
 }
 
-/* #mainPicture{
-
-} */
+#mainPicture{
+  height: 500px;
+  background: url("../static/imgs/election.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 0px;
+}
 
 @media (min-width: 768px) {
 
