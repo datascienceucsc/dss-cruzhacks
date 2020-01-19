@@ -28,7 +28,8 @@ def update_fig(col, dataframe, str):
     )
     layout = go.Layout(
         geo_scope='usa', # limite map scope to USA
-        template = 'plotly_dark'
+        template = 'plotly_dark',
+        dragmode=False
     )
     fig = go.Figure(data=data, layout=layout)
     return fig
