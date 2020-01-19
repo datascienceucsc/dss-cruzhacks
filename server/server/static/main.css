@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  font-family: Verdana, Sans-Serif;
+}
+
 div.row {
   margin: 1rem 0rem;
 }
