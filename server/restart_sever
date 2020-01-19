@@ -7,6 +7,12 @@ sudo pwd
 cd "${HOME}/dss-cruzhacks/server"  
 
 VENVS="${HOME}/.local/share/virtualenvs"
+LOGS="${HOME}/logs"
 
-screen -dm -L -Logfile "${HOME}/server.log" -S "main-server" sudo "${VENVS}"/server*/bin/python app.py
+[ ! -d "${LOGS}" ] && mkdir -p "${LOGS}"
+
+screen -dm -L -Logfile "${LOGS}/server.log" -S "main-server" sudo "${VENVS}"/server*/bin/python ./app.py --server
+screen -dm -L -Logfile "${LOGS}/overall_spending.log" -S "overall" "${VENVS}"/server*/bin/python ./dash/overall_spending.py
+screen -dm -L -Logfile "${LOGS}/overall_spending_chloro.log" -S "overall-chloro" "${VENVS}"/server*/bin/python ./dash/overall_spending_chloro.py
+screen -dm -L -Logfile "${LOGS}/google_trends.log" -S "google-trends" "${VENVS}"/server*/bin/python ./dash/google_trends.py
 
