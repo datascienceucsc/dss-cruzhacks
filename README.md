@@ -1,6 +1,8 @@
-# dss-cruzhacks
+# The Transparency Project
+*Data Science Slugs @ Cruzhacks 2020* -
+*Sean Breckenridge, Julian Lehrer, Oasys Okubo, Garett Leising and Anders Poirel*
 
-## transparencyusa.tech
+![Website Snapshot](https://i.imgur.com/MWG9lS5.jpg)
 
 The number one source for transparency, brah
 
@@ -16,4 +18,14 @@ pipenv install
 pipenv shell
 export FLASK_ENV=development
 flask run
+```
+
+Folder structure
+```
+data 
+
+server      |---- dash
+            |
+            |
+wrangling
 ```

@@ -64,7 +64,7 @@ def update_fig(col, dataframe):
 data2 = go.Bar(name='Number of Ads in Library', x=data_max['Page Name'], y = data_max['Number of Ads in Library'])
 
 app = dash.Dash(__name__,
-        external_stylesheets=["http://34.94.120.23/static/graph.css"])
+        external_stylesheets=["http://transparencyproject.tech/static/graph.css"])
 
 app.layout = html.Div(children=[
     dcc.Dropdown(
