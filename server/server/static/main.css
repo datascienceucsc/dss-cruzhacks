@@ -88,6 +88,14 @@ a.list-group-item {
   background-color: #111;
 }
 
+#nav-singleCandidate{
+  outline: 0;
+}
+
+#nav-multiCandidate{
+  outline: 0;
+}
+
 #mainPicture {
   background: url("../static/imgs/votingSticker.jpg") no-repeat center center
     fixed;
