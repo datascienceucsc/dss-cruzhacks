@@ -14,7 +14,19 @@ from config import data_dir
 geo_spend_loc = os.path.join(data_dir, "per_capita_spending_JL.csv")
 data = pd.read_csv(geo_spend_loc)
 
-data['text'] = data['Spend_USD']
+def group(number):
+    s = '%d' % number
+    groups = []
+    while s and s[-1].isdigit():
+        groups.append(s[-3:])
+        s = s[:-3]
+    return s + ','.join(reversed(groups))
+
+
+data['text'] = data['Spend_USD'].apply(lambda x: '$' + group(x))
+
+# '$ {:,}'.format(data['Spend_USD'].round(1).astype(int))
+
 def update_fig(col, dataframe, str):
     data=go.Choropleth(
         locations=dataframe['Country_Subdivision_Primary'], # Spatial coordinates
@@ -31,8 +43,8 @@ def update_fig(col, dataframe, str):
                 'side':'top'
             }
         },
-        text = None,
-        hoverinfo='location+name',
+        text = dataframe['text'],
+        hoverinfo='location+text',
     )
     layout = go.Layout(
         geo_scope = 'usa', # limite map scope to USA
@@ -56,14 +68,14 @@ app.layout = html.Div(
         dcc.Dropdown(
             id='dropdown',
             options = [
-                {'label' : 'Total USD Spent (by State)', 'value' : 'Spend_USD'},
-                {'label' : 'Per Capita USD Spent (by State)', 'value' : 'spending_per_capita'},
+                {'label' : 'Total USD Spent', 'value' : 'Spend_USD'},
+                {'label' : 'Per Capita USD Spent', 'value' : 'spending_per_capita'},
             ],
             value = 'Spend_USD',
         ),
         dcc.Graph(
             id = 'total_spent_chart',
-            figure = update_fig('Spend_USD', data, 'Total USD Spent (by State)'),
+            figure = update_fig('Spend_USD', data, 'Total USD Spent'),
             config = {
                 'displayModeBar' : False,
                 'editable':False,
@@ -78,9 +90,9 @@ app.layout = html.Div(
 
 def update(input_val):
     if input_val == 'Spend_USD':
-        return update_fig(input_val, data, 'Total USD Spent (by State)')
+        return update_fig(input_val, data, 'Total USD Spent')
     else:
-        return update_fig(input_val, data, 'Per Capita USD Spent (by State)')
+        return update_fig(input_val, data, 'Per Capita USD Spent')
 
 if __name__=='__main__':
     app.run_server(debug=True, host="0.0.0.0", port=8052)
