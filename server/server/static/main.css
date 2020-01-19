@@ -56,6 +56,7 @@ div.card.text-white.bg-dark.mb-3 {
 
 .jumbotron.text-center {
   height: 90vh;
+  margin-bottom: 3rem;
 }
 
 .nav-link {
@@ -87,7 +88,7 @@ div.card.text-white.bg-dark.mb-3 {
 }
 
 a.btn.btn-outline-danger.btn-lg {
-  margin-top: 4.5rem;
+  margin-top: 3rem;
   font-size: 2.5rem;
 }
 
