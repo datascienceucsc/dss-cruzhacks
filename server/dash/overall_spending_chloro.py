@@ -37,11 +37,11 @@ def update_fig(col, dataframe, str):
         colorbar_title = str,
         colorbar = {
             # 'xpad' : 10,
-            'xanchor':'right',
-            'yanchor':'middle',
-            'title' : {
-                'side':'top'
-            }
+            # 'xanchor':'right',
+            # 'yanchor':'middle',
+            # 'title' : {
+            #     'side':'top'
+            # }
         },
         text = dataframe['text'],
         hoverinfo='location+text',
@@ -91,7 +91,7 @@ def update(input_val):
     if input_val == 'Spend_USD':
         return update_fig(input_val, data, 'Total USD Spent')
     else:
-        return update_fig(input_val, data, 'Per Capita USD Spent')
+        return update_fig(input_val, data, 'Per  Capita  USD')
 
 if __name__=='__main__':
-    app.run_server(debug=False, host="0.0.0.0", port=8052)
+    app.run_server(debug=True, host="0.0.0.0", port=8052)
