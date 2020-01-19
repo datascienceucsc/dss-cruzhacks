@@ -50,10 +50,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link americaRed" id="nav-home" href="/">Home</a>
+                  <a class="nav-link americaRed" id="nav-home" href="{{ url_for('router.home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link americaWhite" id="nav-singleCandidate" href="#"
+                  <a class="nav-link americaWhite" id="nav-singleCandidate" href="{{ url_for('router.single') }}"
                     >Single</a
                   >
                 </li>

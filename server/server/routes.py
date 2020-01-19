@@ -9,6 +9,10 @@ google_trends_addr = f"{ip_address}:{google_trends}"
 
 @router.route("/", methods=["GET", "POST"])
 def home():
-    return render_template('home.html', title="Transparency USA", iframesrc=overall_facebook_spending_addr)
+    return render_template('home.html', title="Transparency USA", iframesrc=overall_facebook_spending_chloro_addr)
+
+@router.route("/single", methods=["GET", "POST"])
+def single():
+    return render_template('single_candidate.html', title="Transparency USA - Single Candidates", iframesrc=google_trends_addr)
 
 
