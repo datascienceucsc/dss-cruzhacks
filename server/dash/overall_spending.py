@@ -47,10 +47,8 @@ def update_fig(col, dataframe):
     layout = go.Layout(
         title = {
             'text':'Political Ad Spending on Facebook',
-            'y': .9,        #Bring down from very top of graph
+            'y': .9,        #Optional styling
             'x': .5,        #Middle of graph horizontally
-            'xanchor':'center',
-            'yanchor':'top'
         },
         xaxis_title = 'Political Organization',
         yaxis_title = 'Amount Spent on Advertising (USD)',
@@ -58,7 +56,7 @@ def update_fig(col, dataframe):
         font = {
             "family": "Verdana, Sans-Serif",
             "size": 15
-            },
+        },
     )
     fig = go.Figure(data=data, layout=layout)
     return fig
@@ -99,4 +97,4 @@ def update(input_val):
         return update_fig(input_val, df_new)
 
 if __name__ == '__main__':
-    app.run_server(debug=False, host="0.0.0.0", port=8050)
+    app.run_server(debug=True, host="0.0.0.0", port=8050)
