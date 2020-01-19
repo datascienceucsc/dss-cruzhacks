@@ -56,7 +56,8 @@ def draw_gtrends(candidate):
     fig = go.Figure(data = data, layout = layout)
     return fig
 
-app = dash.Dash(__name__)
+app = dash.Dash(__name__,
+                external_stylesheets=["http://34.94.120.23/static/graph.css"])
 
 app.layout = html.Div([
     html.H1(id = 'candidate_name' 
