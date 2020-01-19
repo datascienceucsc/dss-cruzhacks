@@ -10,6 +10,39 @@ div#dropdown {
   margin-bottom: 2em;
 }
 
-h1, h2, h4 {
-  color: white !important;
+#candidate_drop {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
+
+h1#candidate_name {
+  font-size: 2.5rem;
+}
+
+h1, h2, h4, #candidate_drop {
+  color: white !important;
+  padding-right: 8%;
+  padding-left: 8%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  h1, h2, h4, #candidate_drop {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  h1, h2, h4, #candidate_drop {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  h1, h2, h4, #candidate_drop {
+    width: 1170px;
+  }
+}
+
