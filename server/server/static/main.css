@@ -135,7 +135,7 @@ div.card.text-white.bg-dark.mb-3{
   background: none;
   display: inline-block;
   transition: all 0.5s ease;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
   border-radius: 25px;
   background: white;
 }
@@ -145,7 +145,7 @@ div.card.text-white.bg-dark.mb-3{
   width: 6rem;
   background: none;
   display: inline-block;
-  margin-bottom: 4.5rem;
+  margin-bottom: 5.25rem;
   background: lightgray;
 }
 
