@@ -174,7 +174,7 @@ def draw_gads(candidate):
     return fig
 
 app = dash.Dash(__name__,
-        external_stylesheets=["http://34.94.120.23/static/graph.css"])
+        external_stylesheets=["http://transparencyproject.tech/static/graph.css"])
 
 app.layout = html.Div([
     html.H1(id = 'candidate_name' 

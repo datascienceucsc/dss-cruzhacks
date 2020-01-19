@@ -60,7 +60,7 @@ def update_fig(col, dataframe, str):
     return fig
 
 
-app = dash.Dash(__name__, external_stylesheets=["http://34.94.120.23/static/graph.css"]
+app = dash.Dash(__name__, external_stylesheets=["http://transparencyproject.tech/static/graph.css"]
     # meta_tags=[{"content":"width=device-width"}]
 )
 
