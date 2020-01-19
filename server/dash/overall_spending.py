@@ -38,7 +38,6 @@ aggregation_functions = {'Amount Spent (USD)': 'sum', 'Number of Ads in Library'
 df_new = data_max.groupby('Page Name', as_index=False).aggregate(aggregation_functions)
 df_new = df_new.sort_values(by=['Amount Spent (USD)'], ascending=False)
 
-print(data_max.dtypes)
 # data_max = data_max.groupby('Page Name', as_index=False).aggregate({'Number of Ads in Library' : 'sum'})
 data_max = data_max.sort_values(by=['Number of Ads in Library'], ascending=False)
 
@@ -97,4 +96,4 @@ def update(input_val):
         return update_fig(input_val, df_new, 'Amount Spent on Advertising (USD)')
 
 if __name__ == '__main__':
-    app.run_server(debug=False, host="0.0.0.0", port=8050)
+    app.run_server(debug=True, host="0.0.0.0", port=8050)
