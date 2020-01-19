@@ -70,10 +70,12 @@ def aggregate_rows(df):
 for key in c_d:
     c_d[key] = aggregate_rows(c_d[key])
 
-def update_fig(df_str):
+def update_fig(df_str, str):
     data = go.Scatter(
         x=df_str['Week_Start_Date'],
-        y=df_str['Spend_USD']
+        y=df_str['Spend_USD'],
+        fill='tozeroy',
+        marker_color = '#FF8CA1',
     )
     layout = go.Layout(
         # yaxis_range=[0, 4],
@@ -81,7 +83,14 @@ def update_fig(df_str):
         template = 'plotly_dark',
         yaxis={
             'type':'log'
-        }
+        },
+        xaxis = {
+            'showgrid':False
+        },
+        title={
+            'text':'Spending Over Time for ' + str,
+            'x': .5,
+        },
     )
     fig = go.Figure(data=data, layout=layout)
     return fig
@@ -95,10 +104,10 @@ app.layout = html.Div(children=[
     ),
     dcc.Graph(
         id = 'spent_series_chart',
-        figure=update_fig(c_d['Michael Bloomberg']), #should return dataframe
+        figure=update_fig(c_d['Michael Bloomberg'], 'Michael Bloomberg'), #should return dataframe
         config = {
             'displayModeBar' : False,
-            'editable':False,
+            'editable' : False,
         }
     )
 ])
@@ -109,7 +118,7 @@ app.layout = html.Div(children=[
 )
 
 def update(input_val):
-    return update_fig(c_d[input_val])
+    return update_fig(c_d[input_val], input_val)
 
 if __name__ == '__main__':
     app.run_server(debug=False)

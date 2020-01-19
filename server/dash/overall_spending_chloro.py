@@ -61,7 +61,9 @@ def update_fig(col, dataframe, str):
     return fig
 
 
-app = dash.Dash()
+app = dash.Dash(
+    # meta_tags=[{"content":"width=device-width"}]
+)
 
 app.layout = html.Div(
     children=[

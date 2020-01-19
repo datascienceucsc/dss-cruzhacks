@@ -70,7 +70,7 @@ app.layout = html.Div(children=[
         id='dropdown',
         options = [
             {'label' : 'Total Spend on Facebook Ads', 'value' : 'Amount Spent (USD)'},
-            {'label' : 'Total Number of Ads in Library', 'value' : 'Number of Ads in Library'}
+            {'label' : 'Number of Unique Ads on Facebook', 'value' : 'Number of Ads in Library'}
         ],
         value = 'Amount Spent (USD)',
 
