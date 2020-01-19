@@ -308,9 +308,13 @@ footer svg {
 }
 
 #national-banner {
-  font-size: 150%;
+  font-size: 2rem;
 }
 
 .small-p {
   color: white !important;
+}
+
+#national-jumbotron {
+  margin-top: 25px;
 }
