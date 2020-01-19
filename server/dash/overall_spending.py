@@ -42,7 +42,7 @@ print(data_max.dtypes)
 # data_max = data_max.groupby('Page Name', as_index=False).aggregate({'Number of Ads in Library' : 'sum'})
 data_max = data_max.sort_values(by=['Number of Ads in Library'], ascending=False)
 
-def update_fig(col, dataframe):
+def update_fig(col, dataframe, side_title):
     data = go.Bar(name='Amount Spent (USD)', x=dataframe['Page Name'], y=dataframe[col])
     layout = go.Layout(
         title = {
@@ -51,7 +51,7 @@ def update_fig(col, dataframe):
             'x': .5,        #Middle of graph horizontally
         },
         xaxis_title = 'Political Organization',
-        yaxis_title = 'Amount Spent on Advertising (USD)',
+        yaxis_title = side_title,
         template = 'plotly_dark',
         font = {
             "family": "Verdana, Sans-Serif",
@@ -78,7 +78,7 @@ app.layout = html.Div(children=[
     ),
     dcc.Graph(
         id = 'total_spent_chart',
-        figure = update_fig('Amount Spent (USD)', df_new),
+        figure = update_fig('Amount Spent (USD)', df_new, 'Amount Spent on Advertising (USD)'),
         config = {
             'displayModeBar' : False
         },
@@ -92,9 +92,9 @@ app.layout = html.Div(children=[
 
 def update(input_val):
     if (input_val == 'Number of Ads in Library'): #actual bad code lmao
-        return update_fig(input_val, data_max)
+        return update_fig(input_val, data_max, 'Number of Unique Ads')
     else:
-        return update_fig(input_val, df_new)
+        return update_fig(input_val, df_new, 'Amount Spent on Advertising (USD)')
 
 if __name__ == '__main__':
     app.run_server(debug=False, host="0.0.0.0", port=8050)
