@@ -8,15 +8,80 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 from config import data_dir
 
+#--- data wrangling ---
+
 # data for approval
 approvals = pd.read_csv(os.path.join(data_dir, 'approval_polls.csv'))
 
 # data for google trends
 gtrends = pd.read_csv(os.path.join(data_dir, 'google_trends.csv'))
 
-
 # data for google ads
+weekly_spend = pd.read_csv(os.path.join(data_dir, 
+    "google-political-ads-advertiser-weekly-spend.csv"))
 
+weekly_spend_usd = weekly_spend[['Advertiser_Name', 'Week_Start_Date', 'Spend_USD', 'Election_Cycle']]
+weekly_spend_usd['Week_Start_Date'] = pd.to_datetime(weekly_spend_usd['Week_Start_Date'])
+weekly_spend_usd['Advertiser_Name'] = weekly_spend_usd['Advertiser_Name'].apply(str.lower)
+
+bloomberg = weekly_spend_usd[
+    weekly_spend_usd['Advertiser_Name'].str.contains("bloomberg")]
+trump = weekly_spend_usd[
+    weekly_spend_usd['Advertiser_Name'].str.contains("trump")]
+biden = weekly_spend_usd[
+    weekly_spend_usd['Advertiser_Name'].str.contains("biden")]
+bennet = weekly_spend_usd[
+    weekly_spend_usd['Advertiser_Name'].str.contains("bennet")]
+buttigieg = weekly_spend_usd[
+    weekly_spend_usd['Advertiser_Name'].str.contains("buttigieg|pete")]
+delaney = weekly_spend_usd[
+    weekly_spend_usd['Advertiser_Name'].str.contains("delaney")]
+gabbard = weekly_spend_usd[
+    weekly_spend_usd['Advertiser_Name'].str.contains("gabbard|tulsi")]
+klobuchar = weekly_spend_usd[
+    weekly_spend_usd['Advertiser_Name'].str.contains("klobuchar")]
+warren = weekly_spend_usd[
+    weekly_spend_usd['Advertiser_Name'].str.contains("warren")]
+yang = weekly_spend_usd[
+    weekly_spend_usd['Advertiser_Name'].str.contains("yang")]
+walsh = weekly_spend_usd[
+    weekly_spend_usd['Advertiser_Name'].str.contains("walsh")]
+weld = weekly_spend_usd[
+    weekly_spend_usd['Advertiser_Name'].str.contains("weld")]
+sanders = weekly_spend_usd[
+    weekly_spend_usd['Advertiser_Name'].str.contains("sanders|bernie")]
+patrick = weekly_spend_usd[
+    weekly_spend_usd['Advertiser_Name'].str.contains("patrick")]
+steyer = weekly_spend_usd[
+    weekly_spend_usd['Advertiser_Name'].str.contains("steyer")]
+
+c_d = {
+    'Michael Bloomberg' : bloomberg,
+    'Donald Trump' : trump,
+    'Joe Biden' : biden,
+    'Michael Bennet' : bennet,
+    'Pete Buttigieg' : buttigieg,
+    'John Delaney' : delaney,
+    'Tulsi Gabbard' : gabbard,
+    'Amy Klobuchar' : klobuchar,
+    'Elizabeth Warren' : warren,
+    'Andrew Yang' : yang,
+    'Joe Walsh' : walsh,
+    'William Weld' : weld,
+    'Bernie Sanders' : sanders,
+    'Deval Patrick' : patrick,
+    'Tom Steyer' : steyer
+}
+
+def aggregate_rows(df):
+    aggregation_functions = {'Spend_USD':'sum'}
+    df_new = df.groupby(df['Week_Start_Date'], as_index=False).aggregate(aggregation_functions)
+    return df_new
+
+for key in c_d:
+    c_d[key] = aggregate_rows(c_d[key])
+
+#--- dashboard logic ---
 
 # candidate selection options
 candidates = pd.read_csv(os.path.join(data_dir, 'candidates.csv'), sep = ';')
@@ -34,7 +99,8 @@ def draw_approvals(candidate):
     layout = go.Layout(
         yaxis = dict(title_text = 'Percentage', range = [0,100]),
         xaxis = dict(showgrid = False),
-        title = "Proportion of Americans Favorable to {}".format(candidate),
+        title = {"text": "Proportion of Americans Favorable to {}".format(candidate),
+                'x': .5},
         template = 'plotly_dark'
     )
     fig = go.Figure(data = data, layout = layout)
@@ -51,8 +117,36 @@ def draw_gtrends(candidate):
         yaxis = dict(title_text = 'Interest (out of 100)',
             range = [0,100]),
         xaxis = dict(showgrid = False),
-        title = 'Interest for {}'.format(candidate),
+        title = {'text': 'Weekly Interest for {}'.format(candidate),
+                 'x': .5},
         template = 'plotly_dark')
+    fig = go.Figure(data = data, layout = layout)
+    return fig
+
+# plotting google ads spending
+def draw_gads(candidate):
+    dataframe = c_d[candidate]
+    data = go.Scatter(
+        x = dataframe['Week_Start_Date'],
+        y = dataframe['Spend_USD'],
+        marker_color = '#FB6A84',
+        fill = 'tozeroy'
+    )
+    layout = go.Layout(
+        # yaxis_range=[0, 4],
+        xaxis_range = ['2018-12-01','2020-01-05'],
+        template = 'plotly_dark',
+        yaxis = {
+            'type':'log'
+        },
+        xaxis = {
+            'showgrid':False
+        },
+        title = {
+            'text': '{}\'s Daily Ad Spending'.format(candidate),
+            'x': .5
+        },
+    )
     fig = go.Figure(data = data, layout = layout)
     return fig
 
@@ -72,8 +166,8 @@ app.layout = html.Div([
 
     html.H4('Follower counts'),
 
-    dcc.Graph(id = 'media_numbers',
-              config = {'displayModeBar' : False}))
+    dcc.Graph(id = 'medianum',
+              config = {'displayModeBar' : False}),
 
     html.H2('Approval'),
 
@@ -84,7 +178,8 @@ app.layout = html.Div([
     html.H2('Google Ads'),
 
     dcc.Graph(id = 'gads',
-             config  = {'displayModeBar' : False}),
+              figure = draw_gads('Joe Biden'),
+              config  = {'displayModeBar' : False}),
 
     html.H2('Google Trends'),
 
@@ -99,6 +194,13 @@ app.layout = html.Div([
 )
 def update_approvals(candidate):
     return(draw_approvals(candidate))
+
+@app.callback(
+    Output('gads', 'figure'),
+    [Input('candidate_drop', 'value')]
+)
+def update_gads(candidate): 
+    return draw_gads(candidate)
 
 @app.callback(
     Output('gtrends', 'figure'),
