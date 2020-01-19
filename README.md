@@ -1,5 +1,5 @@
 # The Transparency Project
-*Data Science Slugs @ Cruzhacks 2020*
+*Data Science Slugs @ Cruzhacks 2020* -
 *Sean Breckenridge, Julian Lehrer, Oasys Okubo, Garett Leising and Anders Poirel*
 
 ![Website Snapshot](https://i.imgur.com/MWG9lS5.jpg)
