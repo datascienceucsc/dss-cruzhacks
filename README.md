@@ -1,6 +1,6 @@
 # The Transparency Project
 *Data Science Slugs @ Cruzhacks 2020* -
-*Sean Breckenridge, Julian Lehrer, Oasys Okubo, Garett Leising and Anders Poirel*
+*Sean Breckenridge, Julian Lehrer, Oasys Okubo, Garrett Leising and Anders Poirel*
 
 ![Website Snapshot](https://i.imgur.com/MWG9lS5.jpg)
 
@@ -21,11 +21,14 @@ flask run
 ```
 
 Folder structure
-```
-data 
 
-server      |---- dash
-            |
-            |
-wrangling
+```
+   |---- data 
+   |
+   |--- server-----|---- dash
+   |               |
+   |               |---- server---- |---- static
+   |                                |
+   |                                |---- template
+   |---- wrangling
 ```
