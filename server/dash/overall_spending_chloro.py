@@ -76,7 +76,7 @@ app.layout = html.Div(
         ),
         dcc.Graph(
             id = 'total_spent_chart',
-            figure = update_fig('Spend_USD', data, 'Total USD Spent', 'Total USD Spent on Facebook Ads (YTD)'),
+            figure = update_fig('Spend_USD', data, 'Total USD Spent', 'Total USD Spent for Facebook Ads By Political Organizations (YTD)'),
             config = {
                 'displayModeBar' : False,
             }
@@ -90,9 +90,9 @@ app.layout = html.Div(
 
 def update(input_val):
     if input_val == 'Spend_USD':
-        return update_fig(input_val, data, 'Total USD Spent', 'Total USD Spent on Facebook Ads (YTD)')
+        return update_fig(input_val, data, 'Total USD Spent', 'Total USD Spent for Facebook Ads By Political Organizations (YTD)')
     else:
-        return update_fig(input_val, data, 'Per  Capita  USD', 'Per Capita USD Spent on Facebook Ads (YTD)')
+        return update_fig(input_val, data, 'Per  Capita  USD', 'Per Capita USD Spent for Facebook Ads By Political Organizations (YTD)')
 
 if __name__=='__main__':
-    app.run_server(debug=True, host="0.0.0.0", port=8052)
+    app.run_server(debug=False, host="0.0.0.0", port=8052)
