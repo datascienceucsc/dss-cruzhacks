@@ -27,6 +27,8 @@ data['Amount Spent (USD)'] = data['Amount Spent (USD)'].astype(str).astype(int)
 data['Number of Ads in Library'] = data['Number of Ads in Library'].apply(lambda x: re.sub("\D", "", x))
 data['Number of Ads in Library'] = data['Number of Ads in Library'].astype(str).astype(int)
 
+
+
 #Get 20 largest spenders for visualization
 data_max = data.nlargest(20, ['Amount Spent (USD)'])
 
