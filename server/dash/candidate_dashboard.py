@@ -1,6 +1,6 @@
 import os
 import pandas as pd 
-import plotly as plt 
+import plotly
 import plotly.graph_objects as go 
 import dash 
 import dash_core_components as dcc 
@@ -9,6 +9,13 @@ from dash.dependencies import Input, Output
 from config import data_dir
 
 #--- data wrangling ---
+
+# data for media
+
+socmedia = pd.read_csv(os.path.join(data_dir, 'FB_TWITTER_INSTA.csv'),
+    index_col = 'User')
+socmedia.drop(['Unnamed: 0', 'FB_PageLikes', 'INSTA_Following', 'INSTA_Posts', 'TWITTER_Following', 'TWITTER_Tweets'],
+              axis = 1, inplace = True)
 
 # data for approval
 approvals = pd.read_csv(os.path.join(data_dir, 'approval_polls.csv'))
@@ -88,6 +95,22 @@ candidates = pd.read_csv(os.path.join(data_dir, 'candidates.csv'), sep = ';')
 drop_down_options = [{'label' : person, 'value' : person} 
                      for person in candidates['CANDIDATE']]
 
+# plotting social media numbers
+def draw_socmedia(candidate):
+    colors = ['#FB6A84','#095E67', '#12CAD6']
+    media_labels = ['Facebook', 'Instagram', 'Twitter']
+    media_values = socmedia.loc[candidate].values
+    data = go.Pie(labels = media_labels, values = media_values, hole = .5,
+        hoverinfo = 'label+percent', textinfo = 'value'
+    )
+    layout = go.Layout(
+        title = {'text':  'Follower Counts for {}'.format(candidate),
+                 'x': .5},
+        template = 'plotly_dark'
+    )
+    fig = go.Figure(data, layout)
+    return fig
+
 # plotting favorability polls
 def draw_approvals(candidate):
     curr_approvals = approvals[approvals['politician'].isin([candidate])]
@@ -115,7 +138,7 @@ def draw_gtrends(candidate):
         marker_color = '#12CAD6')
     layout = go.Layout(
         yaxis = dict(title_text = 'Interest (out of 100)',
-            range = [0,100]),
+        range = [0,100]),
         xaxis = dict(showgrid = False),
         title = {'text': 'Weekly Interest for {}'.format(candidate),
                  'x': .5},
@@ -153,7 +176,6 @@ def draw_gads(candidate):
 app = dash.Dash(__name__,
         external_stylesheets=["http://34.94.120.23/static/graph.css"])
 
-
 app.layout = html.Div([
     html.H1(id = 'candidate_name' 
     ),
@@ -166,15 +188,14 @@ app.layout = html.Div([
 
     html.H2('Social Media'),
 
-    html.H4('Follower counts'),
-
-    dcc.Graph(id = 'medianum',
+    dcc.Graph(id = 'socmedia',
+              figure = draw_socmedia('Joe Biden'),
               config = {'displayModeBar' : False}),
 
     html.H2('Approval'),
 
     dcc.Graph(id = 'approvals',
-              figure = draw_approvals("Joe Biden"),
+              figure = draw_approvals('Joe Biden'),
               config = {'displayModeBar' : False}),
 
     html.H2('Google Ads'),
@@ -189,6 +210,13 @@ app.layout = html.Div([
               figure = draw_gtrends('Joe Biden'),
               config  = {'displayModeBar' : False})
 ])
+
+@app.callback(
+    Output('socmedia', 'figure'),
+    [Input('candidate_drop', 'value')]
+)
+def update_socmedia(candidate):
+    return(draw_socmedia(candidate))
 
 @app.callback(
     Output('approvals', 'figure'),
