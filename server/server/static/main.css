@@ -52,6 +52,9 @@ div.card.text-white.bg-dark.mb-3{
 
 .jumbotron {
   background: none;
+}
+
+.jumbotron.text-center{
   height: 90vh;
 }
 
