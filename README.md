@@ -9,9 +9,10 @@ The number one source for transparency, brah
 
 ## Installation
 
-- Use python3.7~
-- Install [pipenv](https://github.com/pypa/pipenv)
-- Run `pipenv install` in one of the app directories.
+Clone into an empty directory, and make sure to
+✔ Use python3.7~
+✔ Install [pipenv](https://github.com/pypa/pipenv)
+✔ Run `pipenv install` in one of the app directories.
 
 To run the server:
 
