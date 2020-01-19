@@ -1,6 +1,5 @@
-# dss-cruzhacks
-
-## transparencyusa.tech
+# The Transparency Project
+*Data Science Slugs @ Cruzhacks 2020*
 
 The number one source for transparency, brah
 
