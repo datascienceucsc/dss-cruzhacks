@@ -20,6 +20,7 @@ def draw_fig(candidate):
     data = go.Scatter(
         x = gtrends['date'], y = gtrends[candidate],
         mode = 'lines', hoverinfo = 'y',
+        fill = 'tozeroy',
         marker_color = '#12CAD6')
     layout = go.Layout(
         yaxis = dict(title_text = 'Interest (out of 100)',
