@@ -58,10 +58,10 @@ div.card.text-white.bg-dark.mb-3 {
   background: none;
 }
 
-.jumbotron.text-center {
+/* .jumbotron.text-center {
   height: 90vh;
   margin-bottom: 3rem;
-}
+} */
 
 .nav-link {
   border-top: none;
@@ -192,6 +192,11 @@ a.btn.btn-outline-danger.btn-lg {
   }
 }
 
+.display-2 {
+  font-weight: bold;
+  margin-top: 0px;
+}
+
 #testingAnimation1 {
   position: relative;
   height: 10px;
@@ -287,4 +292,8 @@ a.btn.btn-outline-danger.btn-lg {
 
 p.desc {
   color: white;
+}
+
+#rick {
+
 }

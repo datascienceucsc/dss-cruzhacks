@@ -33,6 +33,10 @@ h2#popularity, h2#presence {
   color: #eeeeee !important;
 }
 
+hr {
+  width: 90%;
+}
+
 h1, h2, h4, #candidate_drop {
  padding-right: 8%;
   padding-left: 8%;

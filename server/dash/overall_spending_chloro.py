@@ -66,6 +66,7 @@ app = dash.Dash(__name__, external_stylesheets=["http://transparencyproject.tech
 
 app.layout = html.Div(
     children=[
+        html.Hr(style={"margin-bottom": "73px"}),
         dcc.Dropdown(
             id='dropdown',
             options = [
