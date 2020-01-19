@@ -4,7 +4,10 @@
 
 ![Website Snapshot](https://i.imgur.com/MWG9lS5.jpg)
 
+
 The number one source for transparency, brah
+
+## Installation
 
 - Use python3.7~
 - Install [pipenv](https://github.com/pypa/pipenv)
@@ -20,10 +23,12 @@ export FLASK_ENV=development
 flask run
 ```
 
+## Project Structure
+
 Folder structure
 
 ```
-   |---- data 
+ --|---- data 
    |
    |--- server-----|---- dash
    |               |
