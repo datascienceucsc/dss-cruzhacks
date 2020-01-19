@@ -144,3 +144,7 @@ a.list-group-item {
     font-size: 2.75rem;
   }
 }
+
+.display-2 {
+    font-weight: bold;
+}
