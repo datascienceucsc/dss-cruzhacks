@@ -19,3 +19,13 @@ pipenv shell
 export FLASK_ENV=development
 flask run
 ```
+
+Folder structure
+```
+data 
+
+server      |---- dash
+            |
+            |
+wrangling
+```
