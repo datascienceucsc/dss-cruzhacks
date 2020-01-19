@@ -9,14 +9,14 @@ google_trends_addr = f"{ip_address}:{google_trends}"
 
 @router.route("/", methods=["GET", "POST"])
 def home():
-    return render_template('home.html', title="Transparency USA", iframesrc=overall_facebook_spending_chloro_addr)
+    return render_template('home.html', title="The Transparency Report")
 
 @router.route("/candidate_dashboard", methods=["GET", "POST"])
 def candidate_dashboard():
-    return render_template('candidate_dashboard.html', title="Transparency USA - Candidate Dashboard", iframesrc=google_trends_addr)
+    return render_template('candidate_dashboard.html', title="The Transparency Report - Candidate Dashboard", iframesrc=google_trends_addr)
 
 @router.route("/national_report", methods=["GET", "POST"])
 def national_report():
-    return render_template('national_report.html', title="Transparency USA - National Report", iframesrc=overall_facebook_spending_addr)    
+    return render_template('national_report.html', title="The Transparency Report - National Report", iframesrc=overall_facebook_spending_addr, iframesrc_map=overall_facebook_spending_chloro_addr)
 
 
