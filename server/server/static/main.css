@@ -42,6 +42,10 @@ img.card-img-top{
   width: 286px;
 }
 
+div.card.text-white.bg-dark.mb-3{
+  margin: auto;
+}
+
 .jumbotron {
   background: none;
 }
@@ -78,6 +82,10 @@ img.card-img-top{
   padding-top: 56px;
 }
 
+#startOfContent{
+  padding-top: 56px;
+}
+
 #wrapper {
   min-height: 100vh;
 }
@@ -106,7 +114,7 @@ img.card-img-top{
 }
 
 #mainPicture {
-  background: url("../static/imgs/votingSticker.jpg") no-repeat center center
+  background: url("../static/imgs/AmericanFlag.jpg") no-repeat center center
     fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -122,20 +130,23 @@ img.card-img-top{
 }
 
 #mainPicture div.col a {
-  height: 8rem;
-  width: 8rem;
+  height: 6rem;
+  width: 6rem;
   background: none;
   display: inline-block;
   transition: all 0.5s ease;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+  border-radius: 25px;
+  background: white;
 }
 
 #mainPicture div.col a:hover {
-  height: 8rem;
-  width: 8rem;
+  height: 6rem;
+  width: 6rem;
   background: none;
   display: inline-block;
   margin-bottom: 4.5rem;
+  background: lightgray;
 }
 
 #mainPicture div.col div:hover {
