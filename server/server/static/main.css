@@ -46,6 +46,10 @@ div.card.text-white.bg-dark.mb-3 {
   margin: auto;
 }
 
+.display-2 {
+  font-weight: bold;
+}
+
 .card-footer {
   padding: none !important;
 }
@@ -186,10 +190,6 @@ a.btn.btn-outline-danger.btn-lg {
   .display-4 {
     font-size: 2rem;
   }
-}
-
-.display-2 {
-  font-weight: bold;
 }
 
 #testingAnimation1 {
