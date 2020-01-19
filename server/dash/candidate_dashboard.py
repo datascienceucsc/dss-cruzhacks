@@ -8,8 +8,58 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 from config import data_dir
 
-# data for each dashboard
+
+# data for approval
+
+# data for google trends
 gtrends = pd.read_csv(os.path.join(data_dir, 'google_trends.csv'))
+
+# data for google ads
+weekly_spend = pd.read_csv(os.path.join(data_dir, 
+    "google-political-ads-advertiser-weekly-spend.csv"))
+
+weekly_spend_usd = weekly_spend[['Advertiser_Name', 
+    'Week_Start_Date', 'Spend_USD', 'Election_Cycle']]
+
+weekly_spend_usd['Week_Start_Date'] = pd.to_datetime(
+    weekly_spend_usd['Week_Start_Date'])
+
+weekly_spend_usd['Advertiser_Name'] = weekly_spend_usd['Advertiser_Name'].apply(str.lower)
+
+bloomberg = weekly_spend_usd[weekly_spend_usd['Advertiser_Name'].str.contains("bloomberg")]
+trump = weekly_spend_usd[weekly_spend_usd['Advertiser_Name'].str.contains("trump")]
+biden = weekly_spend_usd[weekly_spend_usd['Advertiser_Name'].str.contains("biden")]
+bennet = weekly_spend_usd[weekly_spend_usd['Advertiser_Name'].str.contains("bennet")]
+buttigieg = weekly_spend_usd[weekly_spend_usd['Advertiser_Name'].str.contains("buttigieg|pete")]
+delaney = weekly_spend_usd[weekly_spend_usd['Advertiser_Name'].str.contains("delaney")]
+gabbard = weekly_spend_usd[weekly_spend_usd['Advertiser_Name'].str.contains("gabbard|tulsi")]
+klobuchar = weekly_spend_usd[weekly_spend_usd['Advertiser_Name'].str.contains("klobuchar")]
+warren = weekly_spend_usd[weekly_spend_usd['Advertiser_Name'].str.contains("warren")]
+yang = weekly_spend_usd[weekly_spend_usd['Advertiser_Name'].str.contains("yang")]
+walsh = weekly_spend_usd[weekly_spend_usd['Advertiser_Name'].str.contains("walsh")]
+weld = weekly_spend_usd[weekly_spend_usd['Advertiser_Name'].str.contains("weld")]
+sanders = weekly_spend_usd[weekly_spend_usd['Advertiser_Name'].str.contains("sanders|bernie")]
+patrick = weekly_spend_usd[weekly_spend_usd['Advertiser_Name'].str.contains("patrick")]
+steyer = weekly_spend_usd[weekly_spend_usd['Advertiser_Name'].str.contains("steyer")]
+
+c_d = {
+    'Michael Bloomberg' : bloomberg,
+    'Donald Trump' : trump,
+    'Joe Biden' : biden,
+    'Michael Bennet' : bennet,
+    'Pete Buttigieg' : buttigieg,
+    'John Delaney' : delaney,
+    'Tulsi Gabbard' : gabbard,
+    'Amy Klobuchar' : klobuchar,
+    'Elizabeth Warren' : warren,
+    'Andrew Yang' : yang,
+    'Joe Walsh' : walsh,
+    'William Weld' : weld,
+    'Bernie Sanders' : sanders,
+    'Deval Patrick' : patrick,
+    'Tom Steyer' : steyer
+}
+
 
 # candidate selection options
 candidates = pd.read_csv(os.path.join(data_dir, 'candidates.csv'), sep = ';')
