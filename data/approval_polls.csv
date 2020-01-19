@@ -1,0 +1,875 @@
+,start_date,pollster,politician,favorable,very_favorable,somewhat_favorable,tot_favorable
+0,2019-12-07,YouGov,Michael Bennet,14.0,4.0,10.0,28.0
+1,2019-12-07,YouGov,Michael Bloomberg,24.0,7.0,17.0,48.0
+4,2019-12-07,YouGov,Pete Buttigieg,35.0,14.0,21.0,70.0
+6,2019-12-07,YouGov,John Delaney,11.0,3.0,8.0,22.0
+7,2019-12-07,YouGov,Tulsi Gabbard,25.0,6.0,19.0,50.0
+8,2019-12-07,YouGov,Amy Klobuchar,29.0,8.0,21.0,58.0
+9,2019-12-07,YouGov,Deval Patrick,14.0,4.0,10.0,28.0
+10,2019-12-07,YouGov,Tom Steyer,19.0,5.0,14.0,38.0
+12,2019-12-07,YouGov,Andrew Yang,32.0,8.0,24.0,64.0
+13,2019-12-07,YouGov,Bernard Sanders,42.0,20.0,22.0,84.0
+14,2019-12-07,YouGov,Elizabeth Warren,41.0,22.0,19.0,82.0
+15,2019-12-07,YouGov,Joseph R. Biden Jr.,42.0,20.0,22.0,84.0
+16,2019-12-07,YouGov,Donald Trump,45.0,12.0,6.0,63.0
+17,2019-12-04,Quinnipiac University,Pete Buttigieg,31.0,0.0,0.0,31.0
+18,2019-12-04,Quinnipiac University,Amy Klobuchar,24.0,0.0,0.0,24.0
+19,2019-12-04,Quinnipiac University,Michael Bloomberg,21.0,0.0,0.0,21.0
+20,2019-12-04,Quinnipiac University,Bernard Sanders,44.0,0.0,0.0,44.0
+21,2019-12-04,Quinnipiac University,Joseph R. Biden Jr.,44.0,0.0,0.0,44.0
+22,2019-12-04,Quinnipiac University,Elizabeth Warren,38.0,0.0,0.0,38.0
+23,2019-12-04,Quinnipiac University,Donald Trump,40.0,0.0,0.0,40.0
+24,2019-12-04,Monmouth University,Pete Buttigieg,34.0,13.0,21.0,68.0
+25,2019-12-04,Monmouth University,Michael Bloomberg,26.0,7.0,19.0,52.0
+26,2019-12-04,Monmouth University,Andrew Yang,25.0,4.0,21.0,50.0
+27,2019-12-04,Monmouth University,Joseph R. Biden Jr.,43.0,18.0,25.0,86.0
+28,2019-12-04,Monmouth University,Elizabeth Warren,40.0,18.0,22.0,80.0
+29,2019-12-04,Monmouth University,Bernard Sanders,41.0,20.0,21.0,82.0
+30,2019-12-04,Monmouth University,Donald Trump,46.0,33.0,13.0,92.0
+31,2019-12-01,YouGov,Michael Bloomberg,26.0,6.0,20.0,52.0
+34,2019-12-01,YouGov,Pete Buttigieg,36.0,17.0,19.0,72.0
+36,2019-12-01,YouGov,John Delaney,14.0,3.0,11.0,28.0
+37,2019-12-01,YouGov,Tulsi Gabbard,26.0,5.0,21.0,52.0
+39,2019-12-01,YouGov,Amy Klobuchar,28.0,9.0,19.0,56.0
+40,2019-12-01,YouGov,Deval Patrick,16.0,3.0,13.0,32.0
+42,2019-12-01,YouGov,Tom Steyer,22.0,5.0,17.0,44.0
+44,2019-12-01,YouGov,Andrew Yang,33.0,9.0,24.0,66.0
+45,2019-12-01,YouGov,Joseph R. Biden Jr.,42.0,20.0,22.0,84.0
+46,2019-12-01,YouGov,Bernard Sanders,42.0,20.0,22.0,84.0
+47,2019-12-01,YouGov,Elizabeth Warren,41.0,22.0,19.0,82.0
+48,2019-12-01,YouGov,Donald Trump,47.0,34.0,13.0,94.0
+49,2019-11-27,Harris Poll,Pete Buttigieg,32.0,11.0,21.0,64.0
+51,2019-11-27,Harris Poll,Michael Bloomberg,32.0,8.0,23.0,63.0
+52,2019-11-27,Harris Poll,Bernard Sanders,45.0,17.0,28.0,90.0
+53,2019-11-27,Harris Poll,Joseph R. Biden Jr.,44.0,15.0,29.0,88.0
+54,2019-11-27,Harris Poll,Donald Trump,42.0,24.0,18.0,84.0
+55,2019-11-27,Harris Poll,Elizabeth Warren,35.0,13.0,21.0,69.0
+56,2019-11-24,YouGov,Michael Bennet,18.0,5.0,13.0,36.0
+57,2019-11-24,YouGov,Michael Bloomberg,23.0,6.0,17.0,46.0
+60,2019-11-24,YouGov,Pete Buttigieg,35.0,16.0,19.0,70.0
+62,2019-11-24,YouGov,John Delaney,18.0,4.0,14.0,36.0
+63,2019-11-24,YouGov,Tulsi Gabbard,26.0,7.0,19.0,52.0
+65,2019-11-24,YouGov,Amy Klobuchar,31.0,10.0,21.0,62.0
+66,2019-11-24,YouGov,Deval Patrick,16.0,5.0,11.0,32.0
+68,2019-11-24,YouGov,Tom Steyer,23.0,5.0,18.0,46.0
+70,2019-11-24,YouGov,Andrew Yang,34.0,9.0,25.0,68.0
+71,2019-11-24,YouGov,Bernard Sanders,43.0,22.0,21.0,86.0
+72,2019-11-24,YouGov,Joseph R. Biden Jr.,43.0,20.0,23.0,86.0
+73,2019-11-24,YouGov,Elizabeth Warren,42.0,22.0,20.0,84.0
+74,2019-11-24,YouGov,Donald Trump,45.0,35.0,10.0,90.0
+75,2019-11-22,Morning Consult,Donald Trump,40.0,0.0,0.0,40.0
+76,2019-11-17,YouGov,Michael Bennet,19.0,5.0,14.0,38.0
+79,2019-11-17,YouGov,Pete Buttigieg,40.0,18.0,22.0,80.0
+81,2019-11-17,YouGov,John Delaney,17.0,3.0,14.0,34.0
+82,2019-11-17,YouGov,Tulsi Gabbard,25.0,5.0,20.0,50.0
+84,2019-11-17,YouGov,Amy Klobuchar,29.0,9.0,20.0,58.0
+86,2019-11-17,YouGov,Deval Patrick,16.0,3.0,13.0,32.0
+88,2019-11-17,YouGov,Tom Steyer,22.0,6.0,16.0,44.0
+90,2019-11-17,YouGov,Andrew Yang,32.0,8.0,24.0,64.0
+91,2019-11-17,YouGov,Michael Bloomberg,24.0,5.0,19.0,48.0
+92,2019-11-17,YouGov,Elizabeth Warren,44.0,25.0,19.0,88.0
+93,2019-11-17,YouGov,Joseph R. Biden Jr.,44.0,20.0,24.0,88.0
+94,2019-11-17,YouGov,Bernard Sanders,42.0,21.0,21.0,84.0
+95,2019-11-17,YouGov,Donald Trump,44.0,32.0,12.0,88.0
+96,2019-11-15,Morning Consult,Deval Patrick,9.0,0.0,0.0,9.0
+97,2019-11-15,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+98,2019-11-10,YouGov,Michael Bennet,18.0,5.0,13.0,36.0
+101,2019-11-10,YouGov,Pete Buttigieg,38.0,17.0,21.0,76.0
+103,2019-11-10,YouGov,John Delaney,14.0,3.0,11.0,28.0
+104,2019-11-10,YouGov,Tulsi Gabbard,25.0,6.0,19.0,50.0
+106,2019-11-10,YouGov,Amy Klobuchar,31.0,9.0,22.0,62.0
+109,2019-11-10,YouGov,Tom Steyer,21.0,5.0,16.0,42.0
+111,2019-11-10,YouGov,Andrew Yang,33.0,9.0,24.0,66.0
+112,2019-11-10,YouGov,Michael Bloomberg,24.0,6.0,18.0,48.0
+113,2019-11-10,YouGov,Elizabeth Warren,44.0,26.0,18.0,88.0
+114,2019-11-10,YouGov,Bernard Sanders,44.0,22.0,22.0,88.0
+115,2019-11-10,YouGov,Donald Trump,43.0,34.0,9.0,86.0
+116,2019-11-10,YouGov,Joseph R. Biden Jr.,41.0,18.0,23.0,82.0
+117,2019-11-08,Morning Consult,Donald Trump,39.0,0.0,0.0,39.0
+118,2019-11-03,YouGov,Michael Bennet,19.0,5.0,14.0,38.0
+121,2019-11-03,YouGov,Pete Buttigieg,36.0,17.0,19.0,72.0
+123,2019-11-03,YouGov,John Delaney,17.0,3.0,14.0,34.0
+124,2019-11-03,YouGov,Tulsi Gabbard,25.0,7.0,18.0,50.0
+126,2019-11-03,YouGov,Amy Klobuchar,30.0,11.0,19.0,60.0
+129,2019-11-03,YouGov,Tom Steyer,24.0,7.0,17.0,48.0
+131,2019-11-03,YouGov,Andrew Yang,34.0,9.0,25.0,68.0
+132,2019-11-03,YouGov,Elizabeth Warren,46.0,27.0,19.0,92.0
+133,2019-11-03,YouGov,Bernard Sanders,45.0,23.0,22.0,90.0
+134,2019-11-03,YouGov,Joseph R. Biden Jr.,44.0,21.0,23.0,88.0
+135,2019-11-03,YouGov,Donald Trump,44.0,35.0,9.0,88.0
+137,2019-10-30,Monmouth University,Pete Buttigieg,27.0,9.0,18.0,54.0
+138,2019-10-30,Monmouth University,Elizabeth Warren,42.0,20.0,22.0,84.0
+139,2019-10-30,Monmouth University,Joseph R. Biden Jr.,43.0,18.0,25.0,86.0
+140,2019-10-30,Monmouth University,Donald Trump,44.0,34.0,10.0,88.0
+141,2019-11-01,Morning Consult,Donald Trump,40.0,0.0,0.0,40.0
+142,2019-10-30,Monmouth University,Bernard Sanders,41.0,20.0,21.0,82.0
+143,2019-10-29,Harris Poll,Bernard Sanders,48.0,19.0,29.0,96.0
+145,2019-10-29,Harris Poll,Pete Buttigieg,31.0,8.0,23.0,62.0
+147,2019-10-29,Harris Poll,Joseph R. Biden Jr.,48.0,16.0,32.0,96.0
+148,2019-10-29,Harris Poll,Elizabeth Warren,39.0,14.0,25.0,78.0
+149,2019-10-29,Harris Poll,Donald Trump,41.0,24.0,17.0,82.0
+150,2019-10-27,YouGov,Michael Bennet,16.0,5.0,11.0,32.0
+153,2019-10-27,YouGov,Pete Buttigieg,38.0,16.0,22.0,76.0
+155,2019-10-27,YouGov,John Delaney,15.0,3.0,12.0,30.0
+156,2019-10-27,YouGov,Tulsi Gabbard,26.0,6.0,20.0,52.0
+158,2019-10-27,YouGov,Amy Klobuchar,29.0,9.0,20.0,58.0
+162,2019-10-27,YouGov,Tom Steyer,19.0,6.0,13.0,38.0
+164,2019-10-27,YouGov,Andrew Yang,33.0,9.0,24.0,66.0
+165,2019-10-27,YouGov,Elizabeth Warren,44.0,26.0,18.0,88.0
+166,2019-10-27,YouGov,Bernard Sanders,44.0,23.0,21.0,88.0
+167,2019-10-27,YouGov,Joseph R. Biden Jr.,44.0,20.0,24.0,88.0
+168,2019-10-27,YouGov,Donald Trump,45.0,33.0,12.0,90.0
+169,2019-10-25,Morning Consult,Donald Trump,42.0,0.0,0.0,42.0
+170,2019-10-23,Suffolk University,Donald Trump,44.0,0.0,0.0,44.0
+171,2019-10-20,YouGov,Michael Bennet,16.0,3.0,13.0,32.0
+174,2019-10-20,YouGov,Pete Buttigieg,36.0,17.0,19.0,72.0
+176,2019-10-20,YouGov,John Delaney,15.0,3.0,12.0,30.0
+177,2019-10-20,YouGov,Tulsi Gabbard,27.0,7.0,20.0,54.0
+179,2019-10-20,YouGov,Amy Klobuchar,29.0,9.0,20.0,58.0
+184,2019-10-20,YouGov,Tom Steyer,20.0,5.0,15.0,40.0
+186,2019-10-20,YouGov,Andrew Yang,31.0,8.0,23.0,62.0
+187,2019-10-20,YouGov,Elizabeth Warren,44.0,25.0,19.0,88.0
+188,2019-10-20,YouGov,Bernard Sanders,42.0,22.0,20.0,84.0
+189,2019-10-20,YouGov,Donald Trump,43.0,32.0,11.0,86.0
+190,2019-10-20,YouGov,Joseph R. Biden Jr.,42.0,20.0,22.0,84.0
+191,2019-10-18,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+192,2019-10-17,CNN/SSRS,Pete Buttigieg,31.0,0.0,0.0,31.0
+193,2019-10-17,CNN/SSRS,Amy Klobuchar,23.0,0.0,0.0,23.0
+195,2019-10-17,CNN/SSRS,Bernard Sanders,49.0,0.0,0.0,49.0
+196,2019-10-17,CNN/SSRS,Joseph R. Biden Jr.,47.0,0.0,0.0,47.0
+197,2019-10-17,CNN/SSRS,Elizabeth Warren,40.0,0.0,0.0,40.0
+198,2019-10-17,CNN/SSRS,Donald Trump,44.0,0.0,0.0,44.0
+199,2019-10-17,HarrisX,Pete Buttigieg,32.0,13.0,19.0,64.0
+203,2019-10-17,HarrisX,Andrew Yang,28.0,8.0,20.0,56.0
+204,2019-10-17,HarrisX,Amy Klobuchar,25.0,9.0,16.0,50.0
+205,2019-10-17,HarrisX,Tom Steyer,19.0,5.0,14.0,38.0
+207,2019-10-17,HarrisX,Tulsi Gabbard,21.0,7.0,14.0,42.0
+208,2019-10-17,HarrisX,Bernard Sanders,45.0,20.0,25.0,90.0
+209,2019-10-17,HarrisX,Elizabeth Warren,40.0,19.0,21.0,80.0
+210,2019-10-17,HarrisX,Joseph R. Biden Jr.,47.0,20.0,27.0,94.0
+211,2019-10-16,HarrisX,Pete Buttigieg,31.0,11.0,20.0,62.0
+215,2019-10-16,HarrisX,Andrew Yang,29.0,8.0,21.0,58.0
+216,2019-10-16,HarrisX,Amy Klobuchar,24.0,7.0,17.0,48.0
+217,2019-10-16,HarrisX,Tom Steyer,22.0,8.0,14.0,44.0
+219,2019-10-16,HarrisX,Tulsi Gabbard,20.0,6.0,14.0,40.0
+220,2019-10-16,HarrisX,Bernard Sanders,46.0,22.0,24.0,92.0
+221,2019-10-16,HarrisX,Joseph R. Biden Jr.,48.0,23.0,25.0,96.0
+222,2019-10-16,HarrisX,Elizabeth Warren,39.0,16.0,23.0,78.0
+223,2019-10-13,YouGov,Elizabeth Warren,48.0,27.0,21.0,96.0
+224,2019-10-13,YouGov,Michael Bennet,20.0,5.0,15.0,40.0
+227,2019-10-13,YouGov,Pete Buttigieg,39.0,18.0,21.0,78.0
+229,2019-10-13,YouGov,John Delaney,18.0,4.0,14.0,36.0
+230,2019-10-13,YouGov,Tulsi Gabbard,28.0,8.0,20.0,56.0
+232,2019-10-13,YouGov,Amy Klobuchar,33.0,10.0,23.0,66.0
+237,2019-10-13,YouGov,Tom Steyer,22.0,7.0,15.0,44.0
+239,2019-10-13,YouGov,Andrew Yang,36.0,9.0,27.0,72.0
+240,2019-10-13,YouGov,Bernard Sanders,46.0,21.0,25.0,92.0
+241,2019-10-13,YouGov,Joseph R. Biden Jr.,47.0,22.0,25.0,94.0
+242,2019-10-13,YouGov,Donald Trump,42.0,32.0,10.0,84.0
+243,2019-10-12,HarrisX,Elizabeth Warren,40.0,15.0,25.0,80.0
+244,2019-10-12,HarrisX,Bernard Sanders,45.0,19.0,26.0,90.0
+245,2019-10-12,HarrisX,Pete Buttigieg,29.0,10.0,19.0,58.0
+249,2019-10-12,HarrisX,Andrew Yang,26.0,8.0,18.0,52.0
+250,2019-10-12,HarrisX,Amy Klobuchar,23.0,7.0,16.0,46.0
+251,2019-10-12,HarrisX,Tom Steyer,18.0,6.0,12.0,36.0
+253,2019-10-12,HarrisX,Tulsi Gabbard,20.0,5.0,15.0,40.0
+254,2019-10-12,HarrisX,Joseph R. Biden Jr.,47.0,20.0,27.0,94.0
+255,2019-10-11,Quinnipiac University,Elizabeth Warren,36.0,0.0,0.0,36.0
+256,2019-10-11,Quinnipiac University,Joseph R. Biden Jr.,41.0,0.0,0.0,41.0
+257,2019-10-11,Quinnipiac University,Bernard Sanders,39.0,0.0,0.0,39.0
+258,2019-10-11,Morning Consult,Donald Trump,40.0,0.0,0.0,40.0
+259,2019-10-11,Quinnipiac University,Donald Trump,39.0,0.0,0.0,39.0
+260,2019-10-06,Fox News,Elizabeth Warren,46.0,23.0,23.0,92.0
+261,2019-10-06,Fox News,Bernard Sanders,51.0,20.0,31.0,102.0
+262,2019-10-06,YouGov,Michael Bennet,16.0,3.0,13.0,32.0
+265,2019-10-06,YouGov,Pete Buttigieg,36.0,16.0,20.0,72.0
+267,2019-10-06,YouGov,John Delaney,15.0,2.0,13.0,30.0
+268,2019-10-06,YouGov,Tulsi Gabbard,24.0,6.0,18.0,48.0
+270,2019-10-06,YouGov,Amy Klobuchar,27.0,7.0,20.0,54.0
+275,2019-10-06,YouGov,Tom Steyer,16.0,4.0,12.0,32.0
+277,2019-10-06,YouGov,Andrew Yang,34.0,9.0,25.0,68.0
+278,2019-10-06,YouGov,Elizabeth Warren,46.0,28.0,18.0,92.0
+280,2019-10-06,Fox News,Pete Buttigieg,34.0,12.0,22.0,68.0
+283,2019-10-06,Fox News,Andrew Yang,30.0,8.0,22.0,60.0
+284,2019-10-06,Fox News,Joseph R. Biden Jr.,50.0,21.0,28.0,99.0
+285,2019-10-06,YouGov,Bernard Sanders,44.0,20.0,24.0,88.0
+286,2019-10-03,Marist College,Joseph R. Biden Jr.,42.0,0.0,0.0,42.0
+287,2019-10-06,YouGov,Donald Trump,46.0,32.0,14.0,92.0
+288,2019-10-06,Fox News,Donald Trump,43.0,25.0,18.0,86.0
+289,2019-10-07,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+290,2019-10-06,YouGov,Joseph R. Biden Jr.,42.0,19.0,23.0,84.0
+291,2019-09-28,YouGov,Elizabeth Warren,47.0,29.0,18.0,94.0
+292,2019-09-28,YouGov,Michael Bennet,20.0,5.0,15.0,40.0
+295,2019-09-28,YouGov,Pete Buttigieg,38.0,18.0,20.0,76.0
+297,2019-09-28,YouGov,John Delaney,16.0,3.0,13.0,32.0
+298,2019-09-28,YouGov,Tulsi Gabbard,24.0,5.0,19.0,48.0
+300,2019-09-28,YouGov,Amy Klobuchar,31.0,8.0,23.0,62.0
+305,2019-09-28,YouGov,Tom Steyer,19.0,6.0,13.0,38.0
+307,2019-09-28,YouGov,Andrew Yang,35.0,10.0,25.0,70.0
+308,2019-09-28,YouGov,Donald Trump,43.0,32.0,11.0,86.0
+309,2019-09-28,YouGov,Joseph R. Biden Jr.,42.0,19.0,23.0,84.0
+310,2019-09-28,YouGov,Bernard Sanders,41.0,21.0,20.0,82.0
+311,2019-09-27,Morning Consult,Michael Bennet,10.0,2.0,8.0,20.0
+314,2019-09-26,YouGov,Pete Buttigieg,34.0,15.3,18.7,68.0
+316,2019-09-27,Morning Consult,John Delaney,9.0,2.0,7.0,18.0
+317,2019-09-27,Morning Consult,Tulsi Gabbard,13.0,3.0,10.0,26.0
+319,2019-09-27,Morning Consult,Amy Klobuchar,17.0,3.0,14.0,34.0
+324,2019-09-27,Morning Consult,Tom Steyer,11.0,3.0,8.0,22.0
+326,2019-09-27,Morning Consult,Andrew Yang,20.0,5.0,15.0,40.0
+329,2019-09-26,YouGov,Amy Klobuchar,26.7,9.1,17.6,53.4
+332,2019-09-26,YouGov,Tom Steyer,18.6,5.5,13.1,37.2
+333,2019-09-26,YouGov,Tulsi Gabbard,27.7,8.6,19.1,55.4
+334,2019-09-26,YouGov,Andrew Yang,33.3,10.7,22.6,66.6
+335,2019-09-27,Morning Consult,Pete Buttigieg,24.0,9.0,15.0,48.0
+336,2019-09-26,YouGov,Michael Bloomberg,25.3,7.8,17.5,50.6
+337,2019-09-27,Morning Consult,Elizabeth Warren,36.0,17.0,19.0,72.0
+338,2019-09-27,Morning Consult,Bernard Sanders,43.0,19.0,24.0,86.0
+339,2019-09-26,YouGov,Elizabeth Warren,41.5,25.8,15.7,83.0
+340,2019-09-27,Morning Consult,Joseph R. Biden Jr.,46.0,19.0,27.0,92.0
+341,2019-09-26,YouGov,Bernard Sanders,45.3,21.4,23.9,90.6
+342,2019-09-26,YouGov,Donald Trump,44.2,30.2,14.0,88.4
+343,2019-09-27,Morning Consult,Donald Trump,40.0,0.0,0.0,40.0
+344,2019-09-26,YouGov,Joseph R. Biden Jr.,42.2,18.4,23.8,84.4
+345,2019-09-23,Monmouth University,Elizabeth Warren,42.0,22.0,20.0,84.0
+347,2019-09-23,Monmouth University,Pete Buttigieg,30.0,13.0,17.0,60.0
+348,2019-09-23,Monmouth University,Joseph R. Biden Jr.,46.0,20.0,26.0,92.0
+349,2019-09-23,Monmouth University,Bernard Sanders,42.0,18.0,24.0,84.0
+350,2019-09-23,Monmouth University,Donald Trump,43.0,30.0,13.0,86.0
+351,2019-09-22,YouGov,Elizabeth Warren,48.0,29.0,19.0,96.0
+352,2019-09-22,Harris Poll,Bernard Sanders,48.0,16.0,32.0,96.0
+353,2019-09-22,YouGov,Michael Bennet,17.0,5.0,12.0,34.0
+356,2019-09-22,YouGov,Pete Buttigieg,36.0,17.0,19.0,72.0
+358,2019-09-22,YouGov,John Delaney,16.0,4.0,12.0,32.0
+359,2019-09-22,YouGov,Tulsi Gabbard,25.0,6.0,19.0,50.0
+361,2019-09-22,YouGov,Amy Klobuchar,27.0,8.0,19.0,54.0
+366,2019-09-22,YouGov,Tom Steyer,18.0,6.0,12.0,36.0
+368,2019-09-22,YouGov,Andrew Yang,33.0,10.0,23.0,66.0
+370,2019-09-22,Harris Poll,Pete Buttigieg,32.0,12.0,20.0,64.0
+372,2019-09-22,Harris Poll,Elizabeth Warren,40.0,17.0,23.0,80.0
+373,2019-09-22,YouGov,Bernard Sanders,47.0,24.0,23.0,94.0
+374,2019-09-22,Harris Poll,Joseph R. Biden Jr.,48.0,15.0,32.0,95.0
+375,2019-09-22,YouGov,Joseph R. Biden Jr.,45.0,22.0,23.0,90.0
+376,2019-09-22,YouGov,Donald Trump,44.0,30.0,14.0,88.0
+377,2019-09-22,Harris Poll,Donald Trump,41.0,22.0,18.0,81.0
+381,2019-09-19,Quinnipiac University,Amy Klobuchar,20.0,0.0,0.0,20.0
+382,2019-09-19,Quinnipiac University,Pete Buttigieg,28.0,0.0,0.0,28.0
+384,2019-09-19,Quinnipiac University,Andrew Yang,20.0,0.0,0.0,20.0
+385,2019-09-19,Quinnipiac University,Tom Steyer,7.0,0.0,0.0,7.0
+386,2019-09-19,Quinnipiac University,Elizabeth Warren,39.0,0.0,0.0,39.0
+387,2019-09-19,Quinnipiac University,Joseph R. Biden Jr.,45.0,0.0,0.0,45.0
+388,2019-09-19,Quinnipiac University,Donald Trump,38.0,0.0,0.0,38.0
+389,2019-09-19,Quinnipiac University,Bernard Sanders,40.0,0.0,0.0,40.0
+390,2019-09-20,Morning Consult,Donald Trump,42.0,0.0,0.0,42.0
+391,2019-09-14,YouGov,Michael Bennet,17.0,5.0,12.0,34.0
+394,2019-09-14,YouGov,Pete Buttigieg,38.0,17.0,21.0,76.0
+397,2019-09-14,YouGov,John Delaney,15.0,3.0,12.0,30.0
+398,2019-09-14,YouGov,Tulsi Gabbard,26.0,6.0,20.0,52.0
+400,2019-09-14,YouGov,Amy Klobuchar,31.0,9.0,22.0,62.0
+405,2019-09-14,YouGov,Tom Steyer,19.0,6.0,13.0,38.0
+406,2019-09-14,YouGov,Elizabeth Warren,45.0,25.0,20.0,90.0
+408,2019-09-14,YouGov,Andrew Yang,32.0,7.0,25.0,64.0
+409,2019-09-14,YouGov,Joseph R. Biden Jr.,44.0,20.0,24.0,88.0
+410,2019-09-14,YouGov,Donald Trump,44.0,32.0,12.0,88.0
+411,2019-09-14,YouGov,Bernard Sanders,43.0,21.0,22.0,86.0
+412,2019-09-14,HarrisX,Elizabeth Warren,40.0,17.0,23.0,80.0
+413,2019-09-14,HarrisX,Joseph R. Biden Jr.,51.0,22.0,29.0,102.0
+414,2019-09-14,HarrisX,Bernard Sanders,46.0,20.0,26.0,92.0
+416,2019-09-14,HarrisX,Pete Buttigieg,31.0,13.0,18.0,62.0
+420,2019-09-14,HarrisX,Amy Klobuchar,23.0,7.0,16.0,46.0
+421,2019-09-14,HarrisX,Andrew Yang,25.0,9.0,16.0,50.0
+422,2019-09-13,NBC News/Wall Street Journal,Donald Trump,41.0,30.0,11.0,82.0
+423,2019-09-13,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+424,2019-09-10,HarrisX,Bernard Sanders,46.0,23.0,23.0,92.0
+425,2019-09-10,HarrisX,Elizabeth Warren,38.0,18.0,20.0,76.0
+426,2019-09-10,HarrisX,Joseph R. Biden Jr.,47.0,23.0,24.0,94.0
+428,2019-09-10,HarrisX,Pete Buttigieg,29.0,13.0,16.0,58.0
+432,2019-09-10,HarrisX,Amy Klobuchar,26.0,9.0,17.0,52.0
+433,2019-09-10,HarrisX,Andrew Yang,25.0,9.0,16.0,50.0
+434,2019-09-08,YouGov,Elizabeth Warren,47.0,28.0,19.0,94.0
+435,2019-09-08,YouGov,Michael Bennet,19.0,6.0,13.0,38.0
+438,2019-09-08,YouGov,Pete Buttigieg,37.0,16.0,21.0,74.0
+441,2019-09-08,YouGov,John Delaney,17.0,4.0,13.0,34.0
+442,2019-09-08,YouGov,Tulsi Gabbard,24.0,5.0,19.0,48.0
+444,2019-09-08,YouGov,Amy Klobuchar,28.0,9.0,19.0,56.0
+449,2019-09-08,YouGov,Tom Steyer,19.0,6.0,13.0,38.0
+451,2019-09-08,YouGov,Andrew Yang,33.0,10.0,23.0,66.0
+452,2019-09-08,YouGov,Donald Trump,42.0,29.0,13.0,84.0
+453,2019-09-08,YouGov,Joseph R. Biden Jr.,44.0,20.0,24.0,88.0
+454,2019-09-08,YouGov,Bernard Sanders,43.0,21.0,22.0,86.0
+456,2019-09-05,Marist College,Elizabeth Warren,41.0,0.0,0.0,41.0
+457,2019-09-05,Marist College,Joseph R. Biden Jr.,45.0,0.0,0.0,45.0
+458,2019-09-07,Morning Consult,Donald Trump,42.0,0.0,0.0,42.0
+459,2019-09-05,Marist College,Bernard Sanders,38.0,0.0,0.0,38.0
+460,2019-09-02,ABC News/Washington Post,Elizabeth Warren,45.0,23.0,22.0,90.0
+461,2019-09-02,ABC News/Washington Post,Bernard Sanders,49.0,24.0,25.0,98.0
+462,2019-09-02,ABC News/Washington Post,Joseph R. Biden Jr.,53.0,24.0,30.0,107.0
+464,2019-09-02,ABC News/Washington Post,Pete Buttigieg,37.0,16.0,21.0,74.0
+465,2019-09-02,ABC News/Washington Post,Donald Trump,41.0,29.0,11.0,81.0
+466,2019-09-01,YouGov,Elizabeth Warren,44.0,24.0,20.0,88.0
+467,2019-09-01,YouGov,Michael Bennet,17.0,4.0,13.0,34.0
+470,2019-09-01,YouGov,Pete Buttigieg,32.0,14.0,18.0,64.0
+473,2019-09-01,YouGov,John Delaney,16.0,5.0,11.0,32.0
+474,2019-09-01,YouGov,Tulsi Gabbard,24.0,8.0,16.0,48.0
+476,2019-09-01,YouGov,Amy Klobuchar,23.0,6.0,17.0,46.0
+481,2019-09-01,YouGov,Tom Steyer,14.0,5.0,9.0,28.0
+483,2019-09-01,YouGov,Andrew Yang,30.0,8.0,22.0,60.0
+484,2019-09-01,YouGov,Donald Trump,46.0,33.0,13.0,92.0
+485,2019-09-01,YouGov,Bernard Sanders,42.0,20.0,22.0,84.0
+486,2019-09-01,YouGov,Joseph R. Biden Jr.,42.0,19.0,23.0,84.0
+487,2019-08-26,Harris Poll,Bernard Sanders,47.0,17.0,30.0,94.0
+488,2019-08-26,Harris Poll,Joseph R. Biden Jr.,48.0,17.0,31.0,96.0
+490,2019-08-26,Harris Poll,Pete Buttigieg,29.0,10.0,19.0,58.0
+492,2019-08-26,Harris Poll,Elizabeth Warren,37.0,14.0,23.0,74.0
+493,2019-08-26,Harris Poll,Donald Trump,42.0,23.0,19.0,84.0
+494,2019-08-24,YouGov,Elizabeth Warren,44.0,26.0,18.0,88.0
+495,2019-08-24,YouGov,Michael Bennet,17.0,5.0,12.0,34.0
+498,2019-08-24,YouGov,Pete Buttigieg,37.0,16.0,21.0,74.0
+501,2019-08-24,YouGov,John Delaney,14.0,3.0,11.0,28.0
+502,2019-08-24,YouGov,Tulsi Gabbard,27.0,8.0,19.0,54.0
+505,2019-08-24,YouGov,Amy Klobuchar,29.0,9.0,20.0,58.0
+510,2019-08-24,YouGov,Tom Steyer,17.0,5.0,12.0,34.0
+512,2019-08-24,YouGov,Andrew Yang,30.0,10.0,20.0,60.0
+513,2019-08-24,YouGov,Bernard Sanders,46.0,23.0,23.0,92.0
+514,2019-08-24,YouGov,Joseph R. Biden Jr.,46.0,21.0,25.0,92.0
+515,2019-08-24,YouGov,Donald Trump,44.0,31.0,13.0,88.0
+516,2019-08-20,Suffolk University,Donald Trump,41.0,0.0,0.0,41.0
+517,2019-08-23,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+518,2019-08-17,YouGov,Elizabeth Warren,45.0,26.0,19.0,90.0
+519,2019-08-17,YouGov,Michael Bennet,18.0,4.0,14.0,36.0
+522,2019-08-17,YouGov,Pete Buttigieg,35.0,17.0,18.0,70.0
+525,2019-08-17,YouGov,John Delaney,15.0,3.0,12.0,30.0
+526,2019-08-17,YouGov,Tulsi Gabbard,24.0,7.0,17.0,48.0
+530,2019-08-17,YouGov,Amy Klobuchar,26.0,7.0,19.0,52.0
+536,2019-08-17,YouGov,Tom Steyer,18.0,5.0,13.0,36.0
+538,2019-08-17,YouGov,Andrew Yang,29.0,9.0,20.0,58.0
+539,2019-08-17,YouGov,Bernard Sanders,44.0,22.0,22.0,88.0
+540,2019-08-17,YouGov,Donald Trump,44.0,32.0,12.0,88.0
+541,2019-08-17,YouGov,Joseph R. Biden Jr.,42.0,18.0,24.0,84.0
+542,2019-08-16,Morning Consult,Donald Trump,42.0,0.0,0.0,42.0
+543,2019-08-14,HarrisX,Bernard Sanders,44.0,21.0,23.0,88.0
+544,2019-08-14,HarrisX,Joseph R. Biden Jr.,47.0,21.0,26.0,94.0
+545,2019-08-14,HarrisX,Pete Buttigieg,28.0,11.0,17.0,56.0
+547,2019-08-14,HarrisX,Michael Bennet,16.0,6.0,10.0,32.0
+551,2019-08-14,HarrisX,Andrew Yang,25.0,8.0,17.0,50.0
+556,2019-08-14,HarrisX,Tom Steyer,15.0,7.0,8.0,30.0
+557,2019-08-13,HarrisX,Elizabeth Warren,38.0,16.0,22.0,76.0
+562,2019-08-13,HarrisX,Tulsi Gabbard,19.0,5.0,14.0,38.0
+564,2019-08-13,HarrisX,John Delaney,18.0,5.0,13.0,36.0
+566,2019-08-13,HarrisX,Amy Klobuchar,22.0,7.0,15.0,44.0
+567,2019-08-11,Fox News,Elizabeth Warren,46.0,24.0,23.0,93.0
+568,2019-08-11,Fox News,Bernard Sanders,50.0,20.0,29.0,99.0
+569,2019-08-10,YouGov,Elizabeth Warren,43.0,25.0,18.0,86.0
+570,2019-08-11,Fox News,Joseph R. Biden Jr.,50.0,23.0,27.0,100.0
+572,2019-08-10,YouGov,Michael Bennet,20.0,5.0,15.0,40.0
+575,2019-08-10,YouGov,Pete Buttigieg,37.0,19.0,18.0,74.0
+578,2019-08-10,YouGov,John Delaney,18.0,4.0,14.0,36.0
+579,2019-08-10,YouGov,Tulsi Gabbard,26.0,7.0,19.0,52.0
+584,2019-08-10,YouGov,Amy Klobuchar,27.0,8.0,19.0,54.0
+590,2019-08-10,YouGov,Tom Steyer,19.0,5.0,14.0,38.0
+592,2019-08-10,YouGov,Andrew Yang,32.0,9.0,23.0,64.0
+593,2019-08-10,YouGov,Donald Trump,43.0,32.0,11.0,86.0
+594,2019-08-11,Fox News,Donald Trump,42.0,26.0,15.0,83.0
+595,2019-08-10,YouGov,Bernard Sanders,42.0,19.0,23.0,84.0
+596,2019-08-10,YouGov,Joseph R. Biden Jr.,42.0,18.0,24.0,84.0
+597,2019-08-09,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+598,2019-08-05,Morning Consult,Donald Trump,40.0,0.0,0.0,40.0
+599,2019-08-03,YouGov,Elizabeth Warren,43.0,25.0,18.0,86.0
+600,2019-08-03,YouGov,Michael Bennet,19.0,6.0,13.0,38.0
+603,2019-08-03,YouGov,Pete Buttigieg,36.0,19.0,17.0,72.0
+606,2019-08-03,YouGov,John Delaney,15.0,3.0,12.0,30.0
+607,2019-08-03,YouGov,Tulsi Gabbard,26.0,7.0,19.0,52.0
+613,2019-08-03,YouGov,Amy Klobuchar,27.0,8.0,19.0,54.0
+619,2019-08-03,YouGov,Tom Steyer,18.0,5.0,13.0,36.0
+621,2019-08-03,YouGov,Andrew Yang,30.0,8.0,22.0,60.0
+622,2019-08-03,YouGov,Joseph R. Biden Jr.,44.0,20.0,24.0,88.0
+623,2019-08-03,YouGov,Donald Trump,44.0,33.0,11.0,88.0
+624,2019-08-03,YouGov,Bernard Sanders,41.0,19.0,22.0,82.0
+625,2019-08-01,Morning Consult,Donald Trump,44.0,0.0,0.0,44.0
+626,2019-07-31,Harris Poll,Joseph R. Biden Jr.,48.0,18.0,30.0,96.0
+627,2019-07-31,Harris Poll,Bernard Sanders,44.0,16.0,29.0,89.0
+629,2019-07-31,Harris Poll,Pete Buttigieg,27.0,9.0,18.0,54.0
+631,2019-07-31,Harris Poll,Elizabeth Warren,37.0,12.0,25.0,74.0
+632,2019-07-31,Harris Poll,Donald Trump,39.0,21.0,19.0,79.0
+633,2019-07-27,YouGov,Elizabeth Warren,47.0,28.0,19.0,94.0
+634,2019-07-27,YouGov,Michael Bennet,19.0,5.0,14.0,38.0
+637,2019-07-27,YouGov,Pete Buttigieg,39.0,18.0,21.0,78.0
+640,2019-07-27,YouGov,John Delaney,14.0,3.0,11.0,28.0
+641,2019-07-27,YouGov,Tulsi Gabbard,22.0,8.0,14.0,44.0
+647,2019-07-27,YouGov,Amy Klobuchar,29.0,8.0,21.0,58.0
+653,2019-07-27,YouGov,Tom Steyer,19.0,5.0,14.0,38.0
+655,2019-07-27,YouGov,Andrew Yang,27.0,7.0,20.0,54.0
+656,2019-07-27,YouGov,Joseph R. Biden Jr.,48.0,21.0,27.0,96.0
+657,2019-07-27,YouGov,Bernard Sanders,44.0,21.0,23.0,88.0
+658,2019-07-27,YouGov,Donald Trump,42.0,29.0,13.0,84.0
+659,2019-07-28,HarrisX,Joseph R. Biden Jr.,50.0,24.0,26.0,100.0
+660,2019-07-28,HarrisX,Bernard Sanders,43.0,20.0,23.0,86.0
+661,2019-07-28,HarrisX,Pete Buttigieg,27.0,10.0,17.0,54.0
+663,2019-07-28,HarrisX,Michael Bennet,16.0,5.0,11.0,32.0
+667,2019-07-28,HarrisX,Andrew Yang,22.0,8.0,14.0,44.0
+673,2019-07-28,HarrisX,Tom Steyer,18.0,6.0,12.0,36.0
+674,2019-07-27,HarrisX,Elizabeth Warren,40.0,16.0,24.0,80.0
+679,2019-07-27,HarrisX,Tulsi Gabbard,19.0,7.0,12.0,38.0
+681,2019-07-27,HarrisX,John Delaney,18.0,6.0,12.0,36.0
+683,2019-07-27,HarrisX,Amy Klobuchar,24.0,9.0,15.0,48.0
+684,2019-07-25,Morning Consult,Donald Trump,42.0,0.0,0.0,42.0
+685,2019-07-25,Morning Consult,Donald Trump,40.0,0.0,0.0,40.0
+686,2019-07-21,YouGov,Elizabeth Warren,43.0,27.0,16.0,86.0
+687,2019-07-21,YouGov,Michael Bennet,17.0,5.0,12.0,34.0
+690,2019-07-21,YouGov,Pete Buttigieg,33.0,16.0,17.0,66.0
+693,2019-07-21,YouGov,John Delaney,15.0,3.0,12.0,30.0
+694,2019-07-21,YouGov,Tulsi Gabbard,23.0,7.0,16.0,46.0
+700,2019-07-21,YouGov,Amy Klobuchar,29.0,10.0,19.0,58.0
+706,2019-07-21,YouGov,Tom Steyer,19.0,6.0,13.0,38.0
+708,2019-07-21,YouGov,Andrew Yang,25.0,6.0,19.0,50.0
+709,2019-07-21,Fox News,Donald Trump,45.0,28.0,17.0,90.0
+710,2019-07-21,YouGov,Donald Trump,44.0,32.0,12.0,88.0
+711,2019-07-21,YouGov,Joseph R. Biden Jr.,42.0,21.0,21.0,84.0
+712,2019-07-21,YouGov,Bernard Sanders,41.0,19.0,22.0,82.0
+713,2019-07-19,Morning Consult,Bernard Sanders,44.0,0.0,0.0,44.0
+714,2019-07-19,Morning Consult,Joseph R. Biden Jr.,45.0,0.0,0.0,45.0
+716,2019-07-19,Morning Consult,Elizabeth Warren,32.0,0.0,0.0,32.0
+717,2019-07-19,Morning Consult,Donald Trump,39.0,0.0,0.0,39.0
+718,2019-07-14,YouGov,Elizabeth Warren,44.0,26.0,18.0,88.0
+719,2019-07-14,YouGov,Michael Bennet,19.0,5.0,14.0,38.0
+722,2019-07-14,YouGov,Pete Buttigieg,36.0,18.0,18.0,72.0
+725,2019-07-14,YouGov,John Delaney,17.0,3.0,14.0,34.0
+726,2019-07-14,YouGov,Tulsi Gabbard,24.0,7.0,17.0,48.0
+732,2019-07-14,YouGov,Amy Klobuchar,31.0,10.0,21.0,62.0
+738,2019-07-14,YouGov,Tom Steyer,18.0,6.0,12.0,36.0
+740,2019-07-14,YouGov,Andrew Yang,27.0,7.0,20.0,54.0
+741,2019-07-14,YouGov,Donald Trump,46.0,33.0,13.0,92.0
+742,2019-07-14,YouGov,Joseph R. Biden Jr.,46.0,23.0,23.0,92.0
+743,2019-07-14,YouGov,Bernard Sanders,43.0,20.0,23.0,86.0
+744,2019-07-12,Morning Consult,Tom Steyer,11.0,0.0,0.0,11.0
+745,2019-07-12,Morning Consult,Donald Trump,40.0,0.0,0.0,40.0
+746,2019-07-07,YouGov,Elizabeth Warren,45.0,26.0,19.0,90.0
+747,2019-07-07,YouGov,Michael Bennet,18.0,6.0,12.0,36.0
+750,2019-07-07,YouGov,Pete Buttigieg,36.0,18.0,18.0,72.0
+753,2019-07-07,YouGov,John Delaney,14.0,3.0,11.0,28.0
+754,2019-07-07,YouGov,Tulsi Gabbard,22.0,5.0,17.0,44.0
+760,2019-07-07,YouGov,Amy Klobuchar,28.0,9.0,19.0,56.0
+768,2019-07-07,YouGov,Andrew Yang,21.0,4.0,17.0,42.0
+769,2019-07-07,YouGov,Donald Trump,44.0,33.0,11.0,88.0
+770,2019-07-07,YouGov,Joseph R. Biden Jr.,44.0,19.0,25.0,88.0
+771,2019-07-07,YouGov,Bernard Sanders,42.0,18.0,24.0,84.0
+772,2019-06-30,YouGov,Elizabeth Warren,45.0,28.0,17.0,90.0
+773,2019-06-30,YouGov,Michael Bennet,17.0,4.0,13.0,34.0
+776,2019-06-30,YouGov,Pete Buttigieg,37.0,19.0,18.0,74.0
+779,2019-06-30,YouGov,John Delaney,16.0,4.0,12.0,32.0
+780,2019-06-30,YouGov,Tulsi Gabbard,24.0,6.0,18.0,48.0
+786,2019-06-30,YouGov,Amy Klobuchar,31.0,8.0,23.0,62.0
+794,2019-06-30,YouGov,Andrew Yang,24.0,6.0,18.0,48.0
+795,2019-06-30,YouGov,Donald Trump,44.0,31.0,13.0,88.0
+796,2019-06-30,YouGov,Joseph R. Biden Jr.,44.0,20.0,24.0,88.0
+797,2019-06-30,YouGov,Bernard Sanders,42.0,18.0,24.0,84.0
+798,2019-06-29,Morning Consult,Bernard Sanders,42.0,19.0,23.0,84.0
+799,2019-06-30,HarrisX,Bernard Sanders,44.0,17.0,27.0,88.0
+800,2019-06-29,Morning Consult,Joseph R. Biden Jr.,42.0,20.0,22.0,84.0
+801,2019-06-30,HarrisX,Joseph R. Biden Jr.,45.0,20.0,25.0,90.0
+802,2019-06-30,HarrisX,Pete Buttigieg,26.0,9.0,17.0,52.0
+804,2019-06-30,HarrisX,Michael Bennet,14.0,3.0,11.0,28.0
+809,2019-06-30,HarrisX,Andrew Yang,19.0,5.0,14.0,38.0
+815,2019-06-29,Morning Consult,Michael Bennet,8.0,1.0,7.0,16.0
+817,2019-06-29,Morning Consult,Pete Buttigieg,22.0,9.0,13.0,44.0
+820,2019-06-29,Morning Consult,John Delaney,6.0,1.0,5.0,12.0
+821,2019-06-29,Morning Consult,Tulsi Gabbard,15.0,3.0,12.0,30.0
+826,2019-06-29,Morning Consult,Amy Klobuchar,16.0,4.0,12.0,32.0
+831,2019-06-29,Morning Consult,Andrew Yang,12.0,2.0,10.0,24.0
+832,2019-06-29,Morning Consult,Elizabeth Warren,31.0,14.0,17.0,62.0
+833,2019-06-29,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+834,2019-06-28,CNN/SSRS,Joseph R. Biden Jr.,47.0,0.0,0.0,47.0
+839,2019-06-29,HarrisX,Tulsi Gabbard,18.0,5.0,13.0,36.0
+841,2019-06-29,HarrisX,John Delaney,15.0,4.0,11.0,30.0
+843,2019-06-29,HarrisX,Amy Klobuchar,22.0,6.0,16.0,44.0
+844,2019-06-28,CNN/SSRS,Pete Buttigieg,28.0,0.0,0.0,28.0
+848,2019-06-28,CNN/SSRS,Elizabeth Warren,38.0,0.0,0.0,38.0
+849,2019-06-28,CNN/SSRS,Donald Trump,43.0,0.0,0.0,43.0
+850,2019-06-28,CNN/SSRS,Bernard Sanders,44.0,0.0,0.0,44.0
+851,2019-06-29,HarrisX,Elizabeth Warren,36.0,15.0,21.0,72.0
+852,2019-06-26,Harris Poll,Joseph R. Biden Jr.,50.0,19.0,31.0,100.0
+853,2019-06-26,Harris Poll,Bernard Sanders,45.0,17.0,28.0,90.0
+854,2019-06-28,HarrisX,Joseph R. Biden Jr.,48.0,21.0,27.0,96.0
+855,2019-06-28,HarrisX,Bernard Sanders,44.0,16.0,28.0,88.0
+856,2019-06-26,Harris Poll,Pete Buttigieg,26.0,8.0,18.0,52.0
+858,2019-06-28,HarrisX,Michael Bennet,16.0,3.0,13.0,32.0
+863,2019-06-28,HarrisX,Andrew Yang,16.0,5.0,11.0,32.0
+870,2019-06-28,HarrisX,Pete Buttigieg,28.0,9.0,19.0,56.0
+872,2019-06-26,Harris Poll,Donald Trump,41.0,22.0,19.0,82.0
+873,2019-06-26,Harris Poll,Elizabeth Warren,36.0,12.0,24.0,72.0
+874,2019-06-27,HarrisX,Elizabeth Warren,42.0,19.0,23.0,84.0
+879,2019-06-27,HarrisX,Tulsi Gabbard,22.0,7.0,15.0,44.0
+881,2019-06-27,HarrisX,John Delaney,19.0,5.0,14.0,38.0
+883,2019-06-27,HarrisX,Amy Klobuchar,23.0,8.0,15.0,46.0
+884,2019-06-26,HarrisX,Joseph R. Biden Jr.,49.0,24.0,25.0,98.0
+885,2019-06-26,HarrisX,Bernard Sanders,43.0,19.0,24.0,86.0
+886,2019-06-26,HarrisX,Pete Buttigieg,28.0,10.0,18.0,56.0
+888,2019-06-26,HarrisX,Michael Bennet,15.0,4.0,11.0,30.0
+893,2019-06-26,HarrisX,Andrew Yang,18.0,5.0,13.0,36.0
+899,2019-06-25,HarrisX,Elizabeth Warren,36.0,15.0,21.0,72.0
+904,2019-06-25,HarrisX,Tulsi Gabbard,17.0,6.0,11.0,34.0
+906,2019-06-25,HarrisX,John Delaney,16.0,5.0,11.0,32.0
+908,2019-06-25,HarrisX,Amy Klobuchar,22.0,6.0,16.0,44.0
+909,2019-06-22,YouGov,Elizabeth Warren,45.0,27.0,18.0,90.0
+910,2019-06-22,YouGov,Bernard Sanders,45.0,24.0,21.0,90.0
+911,2019-06-22,YouGov,Donald Trump,46.0,33.0,13.0,92.0
+912,2019-06-22,YouGov,Joseph R. Biden Jr.,47.0,25.0,22.0,94.0
+913,2019-06-22,YouGov,Michael Bennet,19.0,7.0,12.0,38.0
+916,2019-06-22,YouGov,Pete Buttigieg,37.0,18.0,19.0,74.0
+919,2019-06-22,YouGov,John Delaney,17.0,6.0,11.0,34.0
+920,2019-06-22,YouGov,Tulsi Gabbard,21.0,8.0,13.0,42.0
+926,2019-06-22,YouGov,Amy Klobuchar,29.0,10.0,19.0,58.0
+933,2019-06-22,YouGov,Andrew Yang,24.0,8.0,16.0,48.0
+934,2019-06-21,Morning Consult,Donald Trump,42.0,0.0,0.0,42.0
+935,2019-06-20,Morning Consult,Joseph R. Biden Jr.,49.0,24.0,25.0,98.0
+936,2019-06-20,Morning Consult,Bernard Sanders,44.0,21.0,23.0,88.0
+937,2019-06-20,Morning Consult,Elizabeth Warren,32.0,15.0,17.0,64.0
+938,2019-06-20,Morning Consult,Donald Trump,40.0,0.0,0.0,40.0
+939,2019-06-20,Morning Consult,Michael Bennet,8.0,2.0,6.0,16.0
+941,2019-06-20,Morning Consult,Pete Buttigieg,23.0,10.0,13.0,46.0
+944,2019-06-20,Morning Consult,John Delaney,7.0,1.0,6.0,14.0
+945,2019-06-20,Morning Consult,Tulsi Gabbard,12.0,3.0,9.0,24.0
+950,2019-06-20,Morning Consult,Amy Klobuchar,17.0,5.0,12.0,34.0
+955,2019-06-20,Morning Consult,Andrew Yang,12.0,3.0,9.0,24.0
+956,2019-06-16,YouGov,Elizabeth Warren,42.0,24.0,18.0,84.0
+957,2019-06-16,YouGov,Donald Trump,45.0,33.0,12.0,90.0
+958,2019-06-16,YouGov,Michael Bennet,15.0,4.0,11.0,30.0
+961,2019-06-16,YouGov,Pete Buttigieg,33.0,17.0,16.0,66.0
+964,2019-06-16,YouGov,John Delaney,13.0,3.0,10.0,26.0
+965,2019-06-16,YouGov,Tulsi Gabbard,16.0,5.0,11.0,32.0
+971,2019-06-16,YouGov,Amy Klobuchar,28.0,8.0,20.0,56.0
+978,2019-06-16,YouGov,Andrew Yang,18.0,5.0,13.0,36.0
+979,2019-06-16,YouGov,Bernard Sanders,43.0,18.0,25.0,86.0
+980,2019-06-16,YouGov,Joseph R. Biden Jr.,44.0,22.0,22.0,88.0
+981,2019-06-14,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+982,2019-06-11,Suffolk University,Donald Trump,46.0,0.0,0.0,46.0
+983,2019-06-09,YouGov,Donald Trump,45.0,35.0,10.0,90.0
+984,2019-06-09,YouGov,Michael Bennet,15.0,5.0,10.0,30.0
+987,2019-06-09,YouGov,Pete Buttigieg,35.0,16.0,19.0,70.0
+990,2019-06-09,YouGov,John Delaney,12.0,3.0,9.0,24.0
+991,2019-06-09,YouGov,Tulsi Gabbard,17.0,4.0,13.0,34.0
+997,2019-06-09,YouGov,Amy Klobuchar,23.0,6.0,17.0,46.0
+1004,2019-06-09,YouGov,Andrew Yang,19.0,5.0,14.0,38.0
+1005,2019-06-09,YouGov,Elizabeth Warren,41.0,22.0,19.0,82.0
+1006,2019-06-09,YouGov,Joseph R. Biden Jr.,44.0,21.0,23.0,88.0
+1007,2019-06-09,YouGov,Bernard Sanders,43.0,19.0,24.0,86.0
+1008,2019-06-07,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+1009,2019-06-02,YouGov,Donald Trump,45.0,33.0,12.0,90.0
+1010,2019-06-02,YouGov,Michael Bennet,17.0,5.0,12.0,34.0
+1013,2019-06-02,YouGov,Pete Buttigieg,34.0,15.0,19.0,68.0
+1016,2019-06-02,YouGov,John Delaney,12.0,3.0,9.0,24.0
+1017,2019-06-02,YouGov,Tulsi Gabbard,20.0,5.0,15.0,40.0
+1023,2019-06-02,YouGov,Amy Klobuchar,27.0,9.0,18.0,54.0
+1030,2019-06-02,YouGov,Andrew Yang,19.0,6.0,13.0,38.0
+1031,2019-06-02,YouGov,Joseph R. Biden Jr.,46.0,23.0,23.0,92.0
+1032,2019-06-02,YouGov,Elizabeth Warren,41.0,21.0,20.0,82.0
+1033,2019-06-02,YouGov,Bernard Sanders,42.0,20.0,22.0,84.0
+1034,2019-05-31,Morning Consult,Donald Trump,42.0,0.0,0.0,42.0
+1035,2019-05-28,CNN/SSRS,Joseph R. Biden Jr.,49.0,0.0,0.0,49.0
+1036,2019-05-28,CNN/SSRS,Bernard Sanders,46.0,0.0,0.0,46.0
+1037,2019-05-28,CNN/SSRS,Donald Trump,45.0,0.0,0.0,45.0
+1038,2019-05-28,CNN/SSRS,Pete Buttigieg,24.0,0.0,0.0,24.0
+1040,2019-05-28,CNN/SSRS,Michael Bennet,10.0,0.0,0.0,10.0
+1043,2019-05-28,CNN/SSRS,Elizabeth Warren,35.0,0.0,0.0,35.0
+1044,2019-05-29,Harris Poll,Joseph R. Biden Jr.,49.0,20.0,29.0,98.0
+1045,2019-05-29,Harris Poll,Bernard Sanders,45.0,15.0,30.0,90.0
+1046,2019-05-29,Harris Poll,Donald Trump,42.0,24.0,19.0,85.0
+1048,2019-05-29,Harris Poll,Pete Buttigieg,26.0,8.0,18.0,52.0
+1050,2019-05-29,Harris Poll,Elizabeth Warren,33.0,10.0,23.0,66.0
+1051,2019-05-26,YouGov,Elizabeth Warren,44.0,22.0,22.0,88.0
+1052,2019-05-26,YouGov,Donald Trump,44.0,33.0,11.0,88.0
+1053,2019-05-26,YouGov,Bernard Sanders,45.0,22.0,23.0,90.0
+1054,2019-05-26,YouGov,Joseph R. Biden Jr.,46.0,23.0,23.0,92.0
+1055,2019-05-26,YouGov,Michael Bennet,16.0,4.0,12.0,32.0
+1058,2019-05-26,YouGov,Pete Buttigieg,34.0,16.0,18.0,68.0
+1061,2019-05-26,YouGov,John Delaney,14.0,4.0,10.0,28.0
+1062,2019-05-26,YouGov,Tulsi Gabbard,16.0,5.0,11.0,32.0
+1068,2019-05-26,YouGov,Amy Klobuchar,26.0,8.0,18.0,52.0
+1075,2019-05-26,YouGov,Andrew Yang,18.0,5.0,13.0,36.0
+1076,2019-05-24,HarrisX,Bernard Sanders,41.0,16.0,25.0,82.0
+1079,2019-05-24,HarrisX,Tulsi Gabbard,14.0,4.0,10.0,28.0
+1086,2019-05-23,HarrisX,Joseph R. Biden Jr.,50.0,24.0,26.0,100.0
+1087,2019-05-23,HarrisX,Elizabeth Warren,34.0,13.0,21.0,68.0
+1088,2019-05-23,HarrisX,Pete Buttigieg,25.0,11.0,14.0,50.0
+1089,2019-05-23,HarrisX,John Delaney,18.0,5.0,13.0,36.0
+1092,2019-05-23,HarrisX,Amy Klobuchar,19.0,5.0,14.0,38.0
+1093,2019-05-23,HarrisX,Andrew Yang,18.0,6.0,12.0,36.0
+1097,2019-05-18,YouGov,Elizabeth Warren,43.0,22.0,21.0,86.0
+1098,2019-05-18,YouGov,Donald Trump,43.0,30.0,13.0,86.0
+1099,2019-05-18,YouGov,Bernard Sanders,45.0,22.0,23.0,90.0
+1100,2019-05-18,YouGov,Joseph R. Biden Jr.,47.0,23.0,24.0,94.0
+1101,2019-05-18,YouGov,Michael Bennet,16.0,5.0,11.0,32.0
+1104,2019-05-18,YouGov,Pete Buttigieg,34.0,17.0,17.0,68.0
+1107,2019-05-18,YouGov,John Delaney,13.0,4.0,9.0,26.0
+1108,2019-05-18,YouGov,Tulsi Gabbard,19.0,6.0,13.0,38.0
+1114,2019-05-18,YouGov,Amy Klobuchar,28.0,8.0,20.0,56.0
+1121,2019-05-18,YouGov,Andrew Yang,22.0,6.0,16.0,44.0
+1122,2019-05-16,Quinnipiac University,Joseph R. Biden Jr.,49.0,0.0,0.0,49.0
+1123,2019-05-16,Quinnipiac University,Donald Trump,38.0,0.0,0.0,38.0
+1127,2019-05-16,Quinnipiac University,Amy Klobuchar,16.0,0.0,0.0,16.0
+1128,2019-05-16,Quinnipiac University,Pete Buttigieg,23.0,0.0,0.0,23.0
+1131,2019-05-16,Quinnipiac University,Tulsi Gabbard,7.0,0.0,0.0,7.0
+1134,2019-05-16,Quinnipiac University,John Delaney,6.0,0.0,0.0,6.0
+1135,2019-05-16,Quinnipiac University,Andrew Yang,8.0,0.0,0.0,8.0
+1141,2019-05-16,Quinnipiac University,Michael Bennet,8.0,0.0,0.0,8.0
+1144,2019-05-16,Quinnipiac University,Bernard Sanders,41.0,0.0,0.0,41.0
+1145,2019-05-16,Quinnipiac University,Elizabeth Warren,32.0,0.0,0.0,32.0
+1146,2019-05-17,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+1147,2019-05-12,YouGov,Donald Trump,44.0,32.0,12.0,88.0
+1148,2019-05-12,YouGov,Joseph R. Biden Jr.,47.0,23.0,24.0,94.0
+1149,2019-05-12,YouGov,Elizabeth Warren,42.0,22.0,20.0,84.0
+1150,2019-05-12,YouGov,Bernard Sanders,44.0,21.0,23.0,88.0
+1151,2019-05-12,YouGov,Michael Bennet,15.0,5.0,10.0,30.0
+1153,2019-05-12,YouGov,Pete Buttigieg,34.0,15.0,19.0,68.0
+1156,2019-05-12,YouGov,John Delaney,13.0,4.0,9.0,26.0
+1157,2019-05-12,YouGov,Tulsi Gabbard,17.0,5.0,12.0,34.0
+1163,2019-05-12,YouGov,Amy Klobuchar,28.0,9.0,19.0,56.0
+1170,2019-05-12,YouGov,Andrew Yang,19.0,6.0,13.0,38.0
+1171,2019-05-10,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+1172,2019-05-05,YouGov,Donald Trump,45.0,31.0,14.0,90.0
+1173,2019-05-05,YouGov,Joseph R. Biden Jr.,47.0,23.0,24.0,94.0
+1174,2019-05-05,YouGov,Bernard Sanders,44.0,20.0,24.0,88.0
+1175,2019-05-05,YouGov,Michael Bennet,17.0,5.0,12.0,34.0
+1177,2019-05-05,YouGov,Pete Buttigieg,34.0,18.0,16.0,68.0
+1180,2019-05-05,YouGov,John Delaney,14.0,3.0,11.0,28.0
+1181,2019-05-05,YouGov,Tulsi Gabbard,18.0,5.0,13.0,36.0
+1187,2019-05-05,YouGov,Amy Klobuchar,26.0,8.0,18.0,52.0
+1193,2019-05-05,YouGov,Elizabeth Warren,41.0,20.0,21.0,82.0
+1195,2019-05-05,YouGov,Andrew Yang,18.0,5.0,13.0,36.0
+1196,2019-05-03,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+1197,2019-04-30,Harris Poll,Bernard Sanders,49.0,17.0,33.0,99.0
+1198,2019-04-30,Harris Poll,Joseph R. Biden Jr.,52.0,21.0,31.0,104.0
+1199,2019-04-30,Harris Poll,Donald Trump,42.0,24.0,18.0,84.0
+1201,2019-04-30,Harris Poll,Pete Buttigieg,26.0,9.0,16.0,51.0
+1203,2019-04-30,Harris Poll,Elizabeth Warren,36.0,11.0,25.0,72.0
+1204,2019-04-27,YouGov,Elizabeth Warren,44.0,23.0,21.0,88.0
+1205,2019-04-27,YouGov,Donald Trump,43.0,32.0,11.0,86.0
+1206,2019-04-27,YouGov,Joseph R. Biden Jr.,49.0,24.0,25.0,98.0
+1207,2019-04-27,YouGov,Bernard Sanders,45.0,21.0,24.0,90.0
+1209,2019-04-27,YouGov,Pete Buttigieg,33.0,18.0,15.0,66.0
+1211,2019-04-27,YouGov,John Delaney,14.0,4.0,10.0,28.0
+1212,2019-04-27,YouGov,Tulsi Gabbard,19.0,6.0,13.0,38.0
+1218,2019-04-27,YouGov,Amy Klobuchar,28.0,10.0,18.0,56.0
+1225,2019-04-27,YouGov,Andrew Yang,18.0,5.0,13.0,36.0
+1226,2019-04-28,HarrisX,Bernard Sanders,47.0,19.0,28.0,94.0
+1227,2019-04-28,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+1230,2019-04-28,HarrisX,Tulsi Gabbard,13.0,5.0,8.0,26.0
+1237,2019-04-27,HarrisX,Joseph R. Biden Jr.,48.0,23.0,25.0,96.0
+1238,2019-04-25,CNN/SSRS,Joseph R. Biden Jr.,51.0,0.0,0.0,51.0
+1239,2019-04-25,CNN/SSRS,Donald Trump,45.0,0.0,0.0,45.0
+1240,2019-04-25,CNN/SSRS,Pete Buttigieg,22.0,0.0,0.0,22.0
+1241,2019-04-27,HarrisX,John Delaney,12.0,3.0,9.0,24.0
+1244,2019-04-27,HarrisX,Amy Klobuchar,19.0,6.0,13.0,38.0
+1245,2019-04-27,HarrisX,Andrew Yang,13.0,3.0,10.0,26.0
+1249,2019-04-27,HarrisX,Pete Buttigieg,24.0,8.0,16.0,48.0
+1255,2019-04-27,HarrisX,Elizabeth Warren,31.0,11.0,20.0,62.0
+1256,2019-04-21,YouGov,Donald Trump,44.0,32.0,12.0,88.0
+1257,2019-04-21,YouGov,Bernard Sanders,45.0,23.0,22.0,90.0
+1258,2019-04-21,YouGov,Joseph R. Biden Jr.,46.0,23.0,23.0,92.0
+1259,2019-04-21,YouGov,Elizabeth Warren,40.0,18.0,22.0,80.0
+1261,2019-04-21,YouGov,Pete Buttigieg,32.0,17.0,15.0,64.0
+1263,2019-04-21,YouGov,John Delaney,14.0,4.0,10.0,28.0
+1264,2019-04-21,YouGov,Tulsi Gabbard,18.0,5.0,13.0,36.0
+1269,2019-04-21,YouGov,Amy Klobuchar,25.0,8.0,17.0,50.0
+1273,2019-04-21,YouGov,Andrew Yang,20.0,7.0,13.0,40.0
+1274,2019-04-19,Morning Consult,Joseph R. Biden Jr.,48.0,0.0,0.0,48.0
+1275,2019-04-19,Morning Consult,Donald Trump,39.0,0.0,0.0,39.0
+1276,2019-04-13,YouGov,Donald Trump,43.0,29.0,14.0,86.0
+1277,2019-04-14,Fox News,Donald Trump,44.0,26.0,18.0,88.0
+1278,2019-04-13,YouGov,Joseph R. Biden Jr.,47.0,21.0,26.0,94.0
+1279,2019-04-13,YouGov,Elizabeth Warren,41.0,20.0,21.0,82.0
+1280,2019-04-13,YouGov,Bernard Sanders,43.0,21.0,22.0,86.0
+1282,2019-04-13,YouGov,Pete Buttigieg,32.0,17.0,15.0,64.0
+1284,2019-04-13,YouGov,John Delaney,12.0,3.0,9.0,24.0
+1285,2019-04-13,YouGov,Tulsi Gabbard,18.0,5.0,13.0,36.0
+1290,2019-04-13,YouGov,Amy Klobuchar,27.0,9.0,18.0,54.0
+1294,2019-04-13,YouGov,Andrew Yang,18.0,5.0,13.0,36.0
+1295,2019-04-12,Morning Consult,Donald Trump,44.0,0.0,0.0,44.0
+1296,2019-04-06,YouGov,Donald Trump,44.0,30.0,14.0,88.0
+1297,2019-04-06,YouGov,Joseph R. Biden Jr.,49.0,22.0,27.0,98.0
+1300,2019-04-06,YouGov,Pete Buttigieg,30.0,14.0,16.0,60.0
+1302,2019-04-06,YouGov,John Delaney,12.0,3.0,9.0,24.0
+1303,2019-04-06,YouGov,Tulsi Gabbard,16.0,4.0,12.0,32.0
+1308,2019-04-06,YouGov,Amy Klobuchar,26.0,9.0,17.0,52.0
+1311,2019-04-06,YouGov,Bernard Sanders,43.0,21.0,22.0,86.0
+1312,2019-04-06,YouGov,Andrew Yang,18.0,5.0,13.0,36.0
+1313,2019-04-06,YouGov,Elizabeth Warren,38.0,19.0,19.0,76.0
+1314,2019-04-05,Morning Consult,Donald Trump,40.0,0.0,0.0,40.0
+1315,2019-03-31,YouGov,Donald Trump,43.0,29.0,14.0,86.0
+1316,2019-03-31,YouGov,Joseph R. Biden Jr.,48.0,24.0,24.0,96.0
+1317,2019-03-31,YouGov,Bernard Sanders,44.0,22.0,22.0,88.0
+1320,2019-03-31,YouGov,Pete Buttigieg,24.0,12.0,12.0,48.0
+1322,2019-03-31,YouGov,John Delaney,12.0,2.0,10.0,24.0
+1323,2019-03-31,YouGov,Tulsi Gabbard,16.0,4.0,12.0,32.0
+1328,2019-03-31,YouGov,Amy Klobuchar,24.0,8.0,16.0,48.0
+1330,2019-03-31,YouGov,Andrew Yang,17.0,6.0,11.0,34.0
+1331,2019-03-31,YouGov,Elizabeth Warren,38.0,16.0,22.0,76.0
+1332,2019-03-29,Morning Consult,Donald Trump,44.0,0.0,0.0,44.0
+1333,2019-03-30,HarrisX,Bernard Sanders,48.0,21.0,27.0,96.0
+1336,2019-03-30,HarrisX,Tulsi Gabbard,14.0,5.0,9.0,28.0
+1341,2019-03-29,HarrisX,Joseph R. Biden Jr.,55.0,30.0,25.0,110.0
+1342,2019-03-29,HarrisX,Elizabeth Warren,34.0,12.0,22.0,68.0
+1343,2019-03-29,HarrisX,Pete Buttigieg,19.0,7.0,11.0,37.0
+1344,2019-03-29,HarrisX,John Delaney,15.0,5.0,10.0,30.0
+1347,2019-03-29,HarrisX,Amy Klobuchar,22.0,8.0,14.0,44.0
+1348,2019-03-29,HarrisX,Andrew Yang,15.0,5.0,10.0,30.0
+1349,2019-03-27,Public Policy Polling,Donald Trump,42.0,0.0,0.0,42.0
+1350,2019-03-25,Harris Poll,Joseph R. Biden Jr.,54.0,24.0,30.0,108.0
+1351,2019-03-25,Harris Poll,Bernard Sanders,46.0,17.0,29.0,92.0
+1352,2019-03-24,YouGov,Donald Trump,45.0,32.0,13.0,90.0
+1353,2019-03-25,Morning Consult,Donald Trump,42.0,0.0,0.0,42.0
+1354,2019-03-25,Harris Poll,Donald Trump,39.0,21.0,17.0,77.0
+1355,2019-03-24,YouGov,Joseph R. Biden Jr.,51.0,27.0,24.0,102.0
+1358,2019-03-24,YouGov,Pete Buttigieg,24.0,12.0,12.0,48.0
+1360,2019-03-24,YouGov,John Delaney,11.0,3.0,8.0,22.0
+1361,2019-03-24,YouGov,Tulsi Gabbard,17.0,5.0,12.0,34.0
+1366,2019-03-24,YouGov,Amy Klobuchar,26.0,8.0,18.0,52.0
+1368,2019-03-24,YouGov,Andrew Yang,14.0,4.0,10.0,28.0
+1369,2019-03-24,YouGov,Bernard Sanders,43.0,20.0,23.0,86.0
+1370,2019-03-24,YouGov,Elizabeth Warren,40.0,19.0,21.0,80.0
+1371,2019-03-25,Harris Poll,Elizabeth Warren,30.0,8.0,22.0,60.0
+1372,2019-03-17,YouGov,Joseph R. Biden Jr.,52.0,27.0,25.0,104.0
+1373,2019-03-17,YouGov,Donald Trump,42.0,30.0,12.0,84.0
+1374,2019-03-17,YouGov,Bernard Sanders,44.0,20.0,24.0,88.0
+1376,2019-03-17,YouGov,Pete Buttigieg,17.0,7.0,10.0,34.0
+1378,2019-03-17,YouGov,John Delaney,12.0,3.0,9.0,24.0
+1379,2019-03-17,YouGov,Tulsi Gabbard,17.0,5.0,12.0,34.0
+1384,2019-03-17,YouGov,Amy Klobuchar,24.0,8.0,16.0,48.0
+1386,2019-03-17,YouGov,Andrew Yang,11.0,4.0,7.0,22.0
+1387,2019-03-17,YouGov,Elizabeth Warren,39.0,16.0,23.0,78.0
+1388,2019-03-13,Suffolk University,Donald Trump,42.0,0.0,0.0,42.0
+1389,2019-03-14,CNN/SSRS,Donald Trump,42.0,0.0,0.0,42.0
+1390,2019-03-15,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+1391,2019-03-14,CNN/SSRS,Bernard Sanders,46.0,0.0,0.0,46.0
+1395,2019-03-14,CNN/SSRS,Amy Klobuchar,15.0,0.0,0.0,15.0
+1397,2019-03-10,YouGov,Donald Trump,44.0,33.0,11.0,88.0
+1398,2019-03-10,YouGov,Joseph R. Biden Jr.,51.0,28.0,23.0,102.0
+1399,2019-03-10,YouGov,Bernard Sanders,43.0,19.0,24.0,86.0
+1401,2019-03-10,YouGov,Pete Buttigieg,17.0,7.0,10.0,34.0
+1403,2019-03-10,YouGov,John Delaney,12.0,3.0,9.0,24.0
+1404,2019-03-10,YouGov,Tulsi Gabbard,17.0,5.0,12.0,34.0
+1409,2019-03-10,YouGov,Amy Klobuchar,25.0,9.0,16.0,50.0
+1411,2019-03-10,YouGov,Andrew Yang,14.0,5.0,9.0,28.0
+1412,2019-03-10,YouGov,Elizabeth Warren,38.0,17.0,21.0,76.0
+1413,2019-03-08,Morning Consult,Donald Trump,39.0,0.0,0.0,39.0
+1414,2019-03-09,HarrisX,Bernard Sanders,41.0,16.0,25.0,82.0
+1417,2019-03-09,HarrisX,Tulsi Gabbard,13.0,3.0,10.0,26.0
+1422,2019-03-08,Morning Consult,Andrew Yang,8.0,0.0,0.0,8.0
+1423,2019-03-08,HarrisX,Joseph R. Biden Jr.,53.0,26.0,27.0,106.0
+1424,2019-03-08,HarrisX,Elizabeth Warren,33.0,13.0,20.0,66.0
+1425,2019-03-08,HarrisX,Pete Buttigieg,16.0,8.0,8.0,32.0
+1426,2019-03-08,HarrisX,John Delaney,17.0,6.0,11.0,34.0
+1429,2019-03-08,HarrisX,Amy Klobuchar,21.0,8.0,13.0,42.0
+1430,2019-03-08,HarrisX,Andrew Yang,13.0,5.0,8.0,26.0
+1431,2019-03-03,YouGov,Donald Trump,46.0,33.0,13.0,92.0
+1433,2019-03-03,YouGov,Pete Buttigieg,16.0,6.0,10.0,32.0
+1435,2019-03-03,YouGov,John Delaney,11.0,3.0,8.0,22.0
+1436,2019-03-03,YouGov,Tulsi Gabbard,15.0,4.0,11.0,30.0
+1440,2019-03-03,YouGov,Amy Klobuchar,25.0,10.0,15.0,50.0
+1441,2019-03-03,YouGov,Elizabeth Warren,39.0,15.0,24.0,78.0
+1442,2019-03-03,YouGov,Bernard Sanders,41.0,18.0,23.0,82.0
+1443,2019-03-01,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+1444,2019-02-24,YouGov,Donald Trump,44.0,32.0,12.0,88.0
+1445,2019-02-24,YouGov,Bernard Sanders,44.0,22.0,22.0,88.0
+1447,2019-02-24,YouGov,Pete Buttigieg,15.0,5.0,10.0,30.0
+1449,2019-02-24,YouGov,John Delaney,11.0,3.0,8.0,22.0
+1450,2019-02-24,YouGov,Tulsi Gabbard,16.0,4.0,12.0,32.0
+1453,2019-02-24,YouGov,Amy Klobuchar,25.0,8.0,17.0,50.0
+1454,2019-02-24,YouGov,Elizabeth Warren,37.0,16.0,21.0,74.0
+1455,2019-02-22,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+1456,2019-02-19,Harris Poll,Bernard Sanders,49.0,19.0,31.0,99.0
+1457,2019-02-19,Harris Poll,Joseph R. Biden Jr.,54.0,25.0,29.0,108.0
+1458,2019-02-19,Harris Poll,Donald Trump,40.0,23.0,17.0,80.0
+1459,2019-02-19,Harris Poll,Elizabeth Warren,34.0,10.0,24.0,68.0
+1460,2019-02-15,Morning Consult,Joseph R. Biden Jr.,50.0,0.0,0.0,50.0
+1461,2019-02-15,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+1462,2019-02-17,YouGov,Donald Trump,44.0,31.0,13.0,88.0
+1463,2019-02-15,Morning Consult,Bernard Sanders,44.0,0.0,0.0,44.0
+1464,2019-02-17,YouGov,Bernard Sanders,42.0,18.0,24.0,84.0
+1466,2019-02-15,Morning Consult,Pete Buttigieg,8.0,0.0,0.0,8.0
+1468,2019-02-17,YouGov,John Delaney,11.0,2.0,9.0,22.0
+1469,2019-02-17,YouGov,Tulsi Gabbard,16.0,5.0,11.0,32.0
+1472,2019-02-17,YouGov,Amy Klobuchar,26.0,9.0,17.0,52.0
+1476,2019-02-15,Morning Consult,Amy Klobuchar,17.0,0.0,0.0,17.0
+1480,2019-02-15,Morning Consult,John Delaney,8.0,0.0,0.0,8.0
+1484,2019-02-15,Morning Consult,Michael Bloomberg,21.0,0.0,0.0,21.0
+1485,2019-02-17,YouGov,Pete Buttigieg,14.0,5.0,9.0,28.0
+1489,2019-02-17,YouGov,Elizabeth Warren,39.0,17.0,22.0,78.0
+1490,2019-02-15,Morning Consult,Elizabeth Warren,27.0,0.0,0.0,27.0
+1491,2019-02-10,Fox News,Donald Trump,43.0,30.0,13.0,86.0
+1492,2019-02-10,YouGov,Donald Trump,40.0,30.0,10.0,80.0
+1493,2019-02-10,YouGov,Bernard Sanders,45.0,22.0,23.0,90.0
+1494,2019-02-10,YouGov,Elizabeth Warren,43.0,18.0,25.0,86.0
+1497,2019-02-10,YouGov,Pete Buttigieg,15.0,5.0,10.0,30.0
+1499,2019-02-10,YouGov,John Delaney,13.0,3.0,10.0,26.0
+1500,2019-02-10,YouGov,Tulsi Gabbard,17.0,4.0,13.0,34.0
+1503,2019-02-10,YouGov,Amy Klobuchar,27.0,10.0,17.0,54.0
+1504,2019-02-07,Morning Consult,Joseph R. Biden Jr.,50.0,0.0,0.0,50.0
+1505,2019-02-07,Morning Consult,Donald Trump,43.0,0.0,0.0,43.0
+1506,2019-02-07,Morning Consult,Bernard Sanders,44.0,0.0,0.0,44.0
+1510,2019-02-07,Morning Consult,Amy Klobuchar,14.0,0.0,0.0,14.0
+1515,2019-02-07,Morning Consult,John Delaney,9.0,0.0,0.0,9.0
+1519,2019-02-07,Morning Consult,Michael Bloomberg,22.0,0.0,0.0,22.0
+1520,2019-02-07,Morning Consult,Pete Buttigieg,8.0,0.0,0.0,8.0
+1524,2019-02-07,Morning Consult,Elizabeth Warren,27.0,0.0,0.0,27.0
+1525,2019-02-02,YouGov,Donald Trump,42.0,30.0,12.0,84.0
+1526,2019-02-02,YouGov,Bernard Sanders,43.0,20.0,23.0,86.0
+1527,2019-02-02,YouGov,Elizabeth Warren,39.0,18.0,21.0,78.0
+1530,2019-02-02,YouGov,Pete Buttigieg,12.0,4.0,8.0,24.0
+1532,2019-02-02,YouGov,John Delaney,10.0,3.0,7.0,20.0
+1533,2019-02-02,YouGov,Tulsi Gabbard,15.0,3.0,12.0,30.0
+1536,2019-02-01,Morning Consult,Bernard Sanders,48.0,0.0,0.0,48.0
+1537,2019-02-01,Morning Consult,Joseph R. Biden Jr.,52.0,0.0,0.0,52.0
+1538,2019-01-30,CNN/SSRS,Donald Trump,44.0,0.0,0.0,44.0
+1539,2019-02-01,Morning Consult,Donald Trump,40.0,0.0,0.0,40.0
+1540,2019-01-30,CNN/SSRS,Elizabeth Warren,33.0,0.0,0.0,33.0
+1541,2019-02-01,Morning Consult,Elizabeth Warren,33.0,0.0,0.0,33.0
+1545,2019-02-01,Morning Consult,Amy Klobuchar,17.0,0.0,0.0,17.0
+1549,2019-01-30,CNN/SSRS,Pete Buttigieg,6.0,0.0,0.0,6.0
+1551,2019-01-30,CNN/SSRS,Tulsi Gabbard,8.0,0.0,0.0,8.0
+1552,2019-01-27,YouGov,Donald Trump,43.0,31.0,12.0,86.0
+1553,2019-01-27,YouGov,Elizabeth Warren,39.0,19.0,20.0,78.0
+1554,2019-01-27,YouGov,Bernard Sanders,42.0,19.0,23.0,84.0
+1556,2019-01-27,YouGov,Pete Buttigieg,11.0,3.0,8.0,22.0
+1557,2019-01-27,YouGov,John Delaney,9.0,2.0,7.0,18.0
+1558,2019-01-27,YouGov,Tulsi Gabbard,14.0,4.0,10.0,28.0
+1561,2019-01-25,Morning Consult,Donald Trump,40.0,0.0,0.0,40.0
+1562,2019-01-25,Morning Consult,Joseph R. Biden Jr.,49.0,0.0,0.0,49.0
+1563,2019-01-25,Morning Consult,Bernard Sanders,44.0,0.0,0.0,44.0
+1564,2019-01-25,Morning Consult,Elizabeth Warren,30.0,0.0,0.0,30.0
+1568,2019-01-25,Morning Consult,Amy Klobuchar,13.0,0.0,0.0,13.0
+1570,2019-01-25,Morning Consult,Pete Buttigieg,7.0,0.0,0.0,7.0
+1571,2019-01-18,Morning Consult,Donald Trump,40.0,0.0,0.0,40.0
+1572,2019-01-20,YouGov,Donald Trump,42.0,31.0,11.0,84.0
+1573,2019-01-18,Morning Consult,Bernard Sanders,45.0,0.0,0.0,45.0
+1574,2019-01-18,Morning Consult,Joseph R. Biden Jr.,49.0,0.0,0.0,49.0
+1575,2019-01-18,Morning Consult,Elizabeth Warren,29.0,0.0,0.0,29.0
+1576,2019-01-20,YouGov,Elizabeth Warren,39.0,18.0,21.0,78.0
+1578,2019-01-20,YouGov,John Delaney,10.0,2.0,8.0,20.0
+1579,2019-01-20,YouGov,Tulsi Gabbard,15.0,4.0,11.0,30.0
+1584,2019-01-18,Morning Consult,Amy Klobuchar,14.0,0.0,0.0,14.0
+1587,2019-01-19,Public Policy Polling,Donald Trump,40.0,0.0,0.0,40.0
+1588,2019-01-15,Harris Poll,Bernard Sanders,50.0,21.0,30.0,101.0
+1589,2019-01-15,Harris Poll,Joseph R. Biden Jr.,56.0,23.0,33.0,112.0
+1590,2019-01-15,Harris Poll,Donald Trump,41.0,22.0,19.0,82.0
+1591,2019-01-15,Harris Poll,Elizabeth Warren,34.0,11.0,23.0,68.0
+1595,2019-01-15,HarrisX,Tulsi Gabbard,13.0,5.0,8.0,26.0
+1598,2019-01-12,YouGov,Donald Trump,44.0,32.0,12.0,88.0
+1599,2019-01-11,Morning Consult,Bernard Sanders,47.0,0.0,0.0,47.0
+1600,2019-01-11,Morning Consult,Donald Trump,41.0,0.0,0.0,41.0
+1601,2019-01-11,Morning Consult,Joseph R. Biden Jr.,50.0,0.0,0.0,50.0
+1602,2019-01-11,Morning Consult,Elizabeth Warren,30.0,0.0,0.0,30.0
+1606,2019-01-11,Morning Consult,Amy Klobuchar,15.0,0.0,0.0,15.0
+1608,2019-01-09,Quinnipiac University,Donald Trump,41.0,0.0,0.0,41.0
+1609,2019-01-06,YouGov,Donald Trump,44.0,30.0,14.0,88.0
+1610,2019-01-06,YouGov,Elizabeth Warren,41.0,22.0,19.0,82.0
+1611,2019-01-04,Morning Consult,Donald Trump,42.0,0.0,0.0,42.0
+1612,2019-01-04,Morning Consult,Joseph R. Biden Jr.,50.0,0.0,0.0,50.0
+1613,2019-01-04,Morning Consult,Bernard Sanders,45.0,0.0,0.0,45.0
+1614,2019-01-04,Morning Consult,Elizabeth Warren,29.0,0.0,0.0,29.0
+1618,2019-01-04,Morning Consult,Amy Klobuchar,12.0,0.0,0.0,12.0
+1620,2019-01-03,HarrisX,Joseph R. Biden Jr.,54.0,25.0,29.0,108.0
+1621,2019-01-03,HarrisX,Elizabeth Warren,37.0,15.0,22.0,74.0
+1622,2019-01-03,HarrisX,Bernard Sanders,46.0,19.0,27.0,92.0
+1625,2019-01-03,HarrisX,Michael Bloomberg,35.0,11.0,23.0,69.0
+1626,2019-01-03,HarrisX,Tom Steyer,18.0,6.0,12.0,36.0
+1630,2019-01-03,HarrisX,Amy Klobuchar,20.0,7.0,12.0,39.0
