@@ -1,33 +1,52 @@
+import os
 import pandas as pd 
 import plotly as plt 
 import plotly.graph_objects as go 
 import dash 
 import dash_core_components as dcc 
 import dash_html_components as html 
+from dash.dependencies import Input, Output
+from config import data_dir
 
-gtrends = pd.read_csv('../../data/google_trends.csv')
-candidates = pd.read_csv('../../data/candidates.csv', sep = ';')
+colors = {}
+
+gtrends = pd.read_csv(os.path.join(data_dir, 'google_trends.csv'))
+candidates = pd.read_csv(os.path.join(data_dir, 'candidates.csv'), sep = ';')
 
 drop_down_options = [{'label' : person, 'value' : person} 
                      for person in candidates['CANDIDATE']]
 
-# layout = go.Layout(title = 'Interest over time',
-#                  showgrid = False,
-#                  template = 'plotly_dark')
+def draw_fig(candidate):
+    data = go.Scatter(
+        x = gtrends['date'], y = gtrends[candidate],
+        mode = 'lines', hoverinfo = 'y',
+        marker_color = '#12CAD6')
+    layout = go.Layout(
+        yaxis = dict(title_text = 'Interest (out of 100)',
+            range = [0,100]),
+        xaxis = dict(showgrid = False),
+        title = 'Interest over time for {}'.format(candidate),
+        template = 'plotly_dark')
+    fig = go.Figure(data = data, layout = layout)
+    return fig
 
 app = dash.Dash(__name__)
-
-app.Layout = html.Div(
+app.layout = html.Div([
     dcc.Dropdown(
-        options = drop_down_options
-    )
+        id = 'candidate_drop',
+        options = drop_down_options,
+        value = 'Joe Biden'
+    ),
+    dcc.Graph(id = 'gtrends', figure = draw_fig('Joe Biden'))
+])
+
+@app.callback(
+    Output('gtrends', 'figure'),
+    [Input('candidate_drop', 'value')]
 )
+def update(candidate):
+    return(draw_fig(candidate))
 
-# @app.callback()
-
-# def update_figure():
-#   return
-
-if __name__ == 'main':
+if __name__ == '__main__':
     app.run_server(debug = True)
 
