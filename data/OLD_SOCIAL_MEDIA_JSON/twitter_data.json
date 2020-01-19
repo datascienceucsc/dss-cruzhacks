@@ -1,0 +1,93 @@
+[
+    {
+        "User": "Michael Bennet",
+        "Followers": "44000",
+        "Following": "2797",
+        "Tweets": "3711"
+    },
+    {
+        "User": "Joe Biden",
+        "Followers": "4100000",
+        "Following": "26",
+        "Tweets": "3589"
+    },
+    {
+        "User": "Mike Bloomberg",
+        "Followers": "2400000",
+        "Following": "495",
+        "Tweets": "11600"
+    },
+    {
+        "User": "Pete Buttigieg ",
+        "Followers": "1600000",
+        "Following": "2597",
+        "Tweets": "10500"
+    },
+    {
+        "User": "John Delaney",
+        "Followers": "38000",
+        "Following": "2578",
+        "Tweets": "9339"
+    },
+    {
+        "User": "Tulsi Gabbard",
+        "Followers": "767100",
+        "Following": "3405",
+        "Tweets": "9865"
+    },
+    {
+        "User": "Amy Klobuchar ",
+        "Followers": "860500",
+        "Following": "139100",
+        "Tweets": "10700"
+    },
+    {
+        "User": "Deval Patrick ",
+        "Followers": "53100",
+        "Following": "1436",
+        "Tweets": "1936"
+    },
+    {
+        "User": "Bernie Sanders ",
+        "Followers": "10300000",
+        "Following": "1445",
+        "Tweets": "16600"
+    },
+    {
+        "User": "Tom Steyer",
+        "Followers": "267800",
+        "Following": "1179",
+        "Tweets": "9589"
+    },
+    {
+        "User": "Elizabeth Warren",
+        "Followers": "3600000",
+        "Following": "514",
+        "Tweets": "7970"
+    },
+    {
+        "User": "Andrew Yang",
+        "Followers": "1200000",
+        "Following": "6967",
+        "Tweets": "15200"
+    },
+    {
+        "User": "Donald Trump",
+        "Followers": "71200000",
+        "Following": "47",
+        "Tweets": "48000"
+    },
+    {
+        "User": "Joe Walsh",
+        "Followers": "229100",
+        "Following": "32100",
+        "Tweets": "68500"
+    },
+    {
+        "User": "Bill Weld",
+        "Followers": "91400",
+        "Following": "270",
+        "Tweets": "804"
+    }
+]
+
