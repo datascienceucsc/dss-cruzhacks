@@ -70,10 +70,11 @@ def aggregate_rows(df):
 for key in c_d:
     c_d[key] = aggregate_rows(c_d[key])
 
-def update_fig(df_str):
+def update_fig(candidate):
+    dataframe = c_d[candidate]
     data = go.Scatter(
-        x=df_str['Week_Start_Date'],
-        y=df_str['Spend_USD']
+        x=dataframe['Week_Start_Date'],
+        y=dataframe['Spend_USD']
     )
     layout = go.Layout(
         # yaxis_range=[0, 4],
@@ -108,8 +109,8 @@ app.layout = html.Div(children=[
     [Input(component_id='candidate_drop', component_property='value')]
 )
 
-def update(input_val):
-    return update_fig(c_d[input_val])
+def update(candidate):
+    return update_fig(candidate)
 
 if __name__ == '__main__':
     app.run_server(debug=False)
