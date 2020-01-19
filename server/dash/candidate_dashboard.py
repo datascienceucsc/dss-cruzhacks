@@ -72,11 +72,14 @@ app.layout = html.Div([
 
     html.H4('Follower counts'),
 
+    dcc.Graph(id = 'media_numbers',
+              config = {'displayModeBar' : False}))
+
     html.H2('Approval'),
 
     dcc.Graph(id = 'approvals',
               figure = draw_approvals("Joe Biden"),
-              config  = {'displayModeBar' : False}),
+              config = {'displayModeBar' : False}),
 
     html.H2('Google Ads'),
 
