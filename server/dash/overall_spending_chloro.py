@@ -78,7 +78,6 @@ app.layout = html.Div(
             figure = update_fig('Spend_USD', data, 'Total USD Spent'),
             config = {
                 'displayModeBar' : False,
-                'editable':False,
             }
         )
     ])
@@ -95,4 +94,4 @@ def update(input_val):
         return update_fig(input_val, data, 'Per Capita USD Spent')
 
 if __name__=='__main__':
-    app.run_server(debug=True, host="0.0.0.0", port=8052)
+    app.run_server(debug=False, host="0.0.0.0", port=8052)
