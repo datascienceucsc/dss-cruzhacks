@@ -46,6 +46,10 @@ div.card.text-white.bg-dark.mb-3{
   margin: auto;
 }
 
+.card-footer{
+  padding: none !important;
+}
+
 .jumbotron {
   background: none;
 }
@@ -166,11 +170,11 @@ div.card.text-white.bg-dark.mb-3{
 
 @media (max-width: 768px) {
   .display-2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .display-4 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
