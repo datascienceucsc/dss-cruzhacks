@@ -14,22 +14,36 @@ from config import data_dir
 geo_spend_loc = os.path.join(data_dir, "per_capita_spending_JL.csv")
 data = pd.read_csv(geo_spend_loc)
 
+data['text'] = data['Spend_USD']
 def update_fig(col, dataframe, str):
     data=go.Choropleth(
         locations=dataframe['Country_Subdivision_Primary'], # Spatial coordinates
         z = dataframe[col].astype(float), # Data to be color-coded
         locationmode = 'USA-states', # set of locations match entries in `locations`
-        colorscale = 'inferno',
+        # colorscale = 'Reds',
+        colorscale = ['#FA163F', '#E4F9FF'],
         colorbar_title = str,
         colorbar = {
-            'xpad' : 0
+            # 'xpad' : 10,
+            'xanchor':'right',
+            'yanchor':'middle',
+            'title' : {
+                'side':'top'
+            }
         },
-        text = None
+        text = None,
+        hoverinfo='location+name',
     )
     layout = go.Layout(
-        geo_scope='usa', # limite map scope to USA
+        geo_scope = 'usa', # limite map scope to USA
         template = 'plotly_dark',
-        dragmode=False
+        dragmode = False,
+        title = {
+            'text': str,
+            'x':0.5,
+
+        },
+        height=700,
     )
     fig = go.Figure(data=data, layout=layout)
     return fig
@@ -42,14 +56,14 @@ app.layout = html.Div(
         dcc.Dropdown(
             id='dropdown',
             options = [
-                {'label' : 'Total Money Spent per State', 'value' : 'Spend_USD'},
-                {'label' : 'Spending per Capita', 'value' : 'spending_per_capita'},
+                {'label' : 'Total USD Spent (by State)', 'value' : 'Spend_USD'},
+                {'label' : 'Per Capita USD Spent (by State)', 'value' : 'spending_per_capita'},
             ],
             value = 'Spend_USD',
         ),
         dcc.Graph(
             id = 'total_spent_chart',
-            figure = update_fig('Spend_USD', data, 'Overall Spending per State ($)'),
+            figure = update_fig('Spend_USD', data, 'Total USD Spent (by State)'),
             config = {
                 'displayModeBar' : False,
                 'editable':False,
@@ -64,9 +78,9 @@ app.layout = html.Div(
 
 def update(input_val):
     if input_val == 'Spend_USD':
-        return update_fig(input_val, data, 'Overall Spending per State ($)')
+        return update_fig(input_val, data, 'Total USD Spent (by State)')
     else:
-        return update_fig(input_val, data, 'Spending per Capita ($)')
+        return update_fig(input_val, data, 'Per Capita USD Spent (by State)')
 
 if __name__=='__main__':
-    app.run_server(debug=False, host="0.0.0.0", port=8052)
+    app.run_server(debug=True, host="0.0.0.0", port=8052)
