@@ -294,6 +294,15 @@ p.desc {
   color: white;
 }
 
+footer small {
+  margin-top: -10px;
+}
+
+footer svg {
+  margin-bottom: -10px;
+  margin-left: 30px;
+}
+
 #rick {
 
 }

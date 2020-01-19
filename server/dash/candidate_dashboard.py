@@ -199,8 +199,8 @@ app = dash.Dash(__name__,
 app.layout = html.Div([
 
     html.Div(
-        html.H1('Candidate', id = 'candidate_name'),
-        style = {'width': '48%', 'display': 'inline-block'}
+        html.H1('Candidate:', id = 'candidate_name'),
+        style = {'width': '30%', 'display': 'inline-block'}
     ),
 
     html.Div(
