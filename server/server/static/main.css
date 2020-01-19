@@ -37,6 +37,11 @@ a.list-group-item {
   padding-bottom: 1rem;
 }
 
+img.card-img-top{
+  height: 370px;
+  width: 286px;
+}
+
 .jumbotron {
   background: none;
 }
@@ -67,6 +72,10 @@ a.list-group-item {
 
 .jumbotron {
   margin-top: 32px;
+}
+
+#startOfContent{
+  padding-top: 56px;
 }
 
 #wrapper {
