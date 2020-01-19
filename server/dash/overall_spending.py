@@ -27,6 +27,9 @@ data['Amount Spent (USD)'] = data['Amount Spent (USD)'].astype(str).astype(int)
 data['Number of Ads in Library'] = data['Number of Ads in Library'].apply(lambda x: re.sub("\D", "", x))
 data['Number of Ads in Library'] = data['Number of Ads in Library'].astype(str).astype(int)
 
+data = data[data['Page Name'] != 'Facebook']
+data = data[data['Page Name'] != 'Instagram']
+
 #Get 20 largest spenders for visualization
 data_max = data.nlargest(20, ['Amount Spent (USD)'])
 
@@ -44,28 +47,31 @@ def update_fig(col, dataframe):
     layout = go.Layout(
         title = {
             'text':'Political Ad Spending on Facebook',
-            'y': .9,        #Bring down from very top of graph
+            'y': .9,        #Optional styling
             'x': .5,        #Middle of graph horizontally
-            'xanchor':'center',
-            'yanchor':'top'
         },
         xaxis_title = 'Political Organization',
         yaxis_title = 'Amount Spent on Advertising (USD)',
         template = 'plotly_dark',
+        font = {
+            "family": "Verdana, Sans-Serif",
+            "size": 15
+        },
     )
     fig = go.Figure(data=data, layout=layout)
     return fig
 
 data2 = go.Bar(name='Number of Ads in Library', x=data_max['Page Name'], y = data_max['Number of Ads in Library'])
 
-app = dash.Dash(__name__)
+app = dash.Dash(__name__,
+        external_stylesheets=["http://34.94.120.23/static/graph.css"])
 
 app.layout = html.Div(children=[
     dcc.Dropdown(
         id='dropdown',
         options = [
             {'label' : 'Total Spend on Facebook Ads', 'value' : 'Amount Spent (USD)'},
-            {'label' : 'Total Number of Ads in Library', 'value' : 'Number of Ads in Library'}
+            {'label' : 'Number of Unique Ads on Facebook', 'value' : 'Number of Ads in Library'}
         ],
         value = 'Amount Spent (USD)',
 
@@ -91,4 +97,4 @@ def update(input_val):
         return update_fig(input_val, df_new)
 
 if __name__ == '__main__':
-    app.run_server(debug=False, host="0.0.0.0", port=8050)
+    app.run_server(debug=True, host="0.0.0.0", port=8050)

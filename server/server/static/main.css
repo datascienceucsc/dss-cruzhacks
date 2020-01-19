@@ -12,7 +12,8 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   font-family: Verdana, Sans-Serif;
 }
 
@@ -87,6 +88,14 @@ a.list-group-item {
   background-color: #111;
 }
 
+#nav-singleCandidate{
+  outline: 0;
+}
+
+#nav-multiCandidate{
+  outline: 0;
+}
+
 #mainPicture {
   background: url("../static/imgs/votingSticker.jpg") no-repeat center center
     fixed;
@@ -136,15 +145,112 @@ a.list-group-item {
 }
 
 @media (max-width: 768px) {
-  .display-2{
+  .display-2 {
     font-size: 3rem;
   }
 
-  .display-4{
+  .display-4 {
     font-size: 2.5rem;
   }
 }
 
 .display-2 {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+#testingAnimation1 {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 25px;
+  background-color: #fa163f;
+  -webkit-animation-name: dots; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: dots;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  opacity: 0.7;
+}
+
+#testingAnimation2 {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 25px;
+  background-color: #e4f9ff;
+  -webkit-animation-name: dots; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: dots;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  opacity: 0.7;
+}
+
+#testingAnimation3 {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 25px;
+  background-color: #0fabbc;
+  -webkit-animation-name: dots; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: dots;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  opacity: 0.7;
+}
+
+@-webkit-keyframes dots {
+  0% {
+    left: 20%;
+    top: 30px;
+  }
+  50% {
+    left: 80%;
+    top: 30px;
+  }
+  /* 50% {
+    left: 100%;
+    top: 97%;
+  }
+  730px {
+    left: 0px;
+    top: 97%;
+  } */
+  100% {
+    left: 20%;
+    top: 30px;
+  }
+}
+
+@keyframes dots {
+  0% {
+    left: 20%;
+    top: 30px;
+  }
+  50% {
+    left: 80%;
+    top: 30px;
+  }
+  /* 50% {
+    left: 100%;
+    top: 97%;
+  }
+  730px {
+    left: 0px;
+    top: 97%;
+  } */
+  100% {
+    left: 20%;
+    top: 30px;
+  }
+}
+
+p.desc {
+  color: white;
 }
