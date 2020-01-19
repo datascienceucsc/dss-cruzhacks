@@ -32,8 +32,8 @@ def update_fig(col, dataframe, str, title):
         locations=dataframe['Country_Subdivision_Primary'], # Spatial coordinates
         z = dataframe[col].astype(float), # Data to be color-coded
         locationmode = 'USA-states', # set of locations match entries in `locations`
-        # colorscale = 'Reds',
-        colorscale = ['#FA163F', '#E4F9FF'],
+        colorscale = 'Portland',
+        # colorscale = ['#E4F9FF', '#5B0817'],
         colorbar_title = str,
         colorbar = {
             # 'xpad' : 10,
@@ -95,4 +95,4 @@ def update(input_val):
         return update_fig(input_val, data, 'Per  Capita  USD', 'Per Capita USD Spent on Facebook Ads (YTD)')
 
 if __name__=='__main__':
-    app.run_server(debug=False, host="0.0.0.0", port=8052)
+    app.run_server(debug=True, host="0.0.0.0", port=8052)
