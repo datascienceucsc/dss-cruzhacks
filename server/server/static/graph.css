@@ -18,8 +18,19 @@ div#dropdown {
   display: block;
 }
 
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
 h1#candidate_name {
   font-size: 2.5rem;
+  padding-left: 20%;
+}
+
+h2#popularity, h2#presence {
+  text-align: center;
+  color: #eeeeee !important;
 }
 
 h1, h2, h4, #candidate_drop {
@@ -33,18 +44,24 @@ h1, h2, h4 {
   color: white !important;
 }
 
+#candidate_drop {
+  width: 50%;
+}
+
 @media (min-width: 768px) {
-  h1, h2, h4, #candidate_drop {
+  h1, h2, h4 {
     width: 750px;
   }
 }
+
 @media (min-width: 992px) {
-  h1, h2, h4, #candidate_drop {
+  h1, h2, h4 {
     width: 970px;
   }
 }
+
 @media (min-width: 1200px) {
-  h1, h2, h4, #candidate_drop {
+  h1, h2, h4 {
     width: 1170px;
   }
 }
