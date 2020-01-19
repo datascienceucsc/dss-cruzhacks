@@ -27,7 +27,7 @@ data['text'] = data['Spend_USD'].apply(lambda x: '$' + group(x))
 
 # '$ {:,}'.format(data['Spend_USD'].round(1).astype(int))
 
-def update_fig(col, dataframe, str):
+def update_fig(col, dataframe, str, title):
     data=go.Choropleth(
         locations=dataframe['Country_Subdivision_Primary'], # Spatial coordinates
         z = dataframe[col].astype(float), # Data to be color-coded
@@ -51,7 +51,7 @@ def update_fig(col, dataframe, str):
         template = 'plotly_dark',
         dragmode = False,
         title = {
-            'text': str,
+            'text': title,
             'x':0.5,
         },
         height=700,
@@ -76,7 +76,7 @@ app.layout = html.Div(
         ),
         dcc.Graph(
             id = 'total_spent_chart',
-            figure = update_fig('Spend_USD', data, 'Total USD Spent'),
+            figure = update_fig('Spend_USD', data, 'Total USD Spent', 'Total USD Spent on Facebook Ads (YTD)'),
             config = {
                 'displayModeBar' : False,
             }
@@ -90,9 +90,9 @@ app.layout = html.Div(
 
 def update(input_val):
     if input_val == 'Spend_USD':
-        return update_fig(input_val, data, 'Total USD Spent')
+        return update_fig(input_val, data, 'Total USD Spent', 'Total USD Spent on Facebook Ads (YTD)')
     else:
-        return update_fig(input_val, data, 'Per  Capita  USD')
+        return update_fig(input_val, data, 'Per  Capita  USD', 'Per Capita USD Spent on Facebook Ads (YTD)')
 
 if __name__=='__main__':
     app.run_server(debug=False, host="0.0.0.0", port=8052)
