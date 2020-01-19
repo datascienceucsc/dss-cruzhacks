@@ -23,18 +23,17 @@
       href="{{ url_for('static', filename='main.css') }}"
     />
     {% if title %}
-    <title>Transparency USA - {{ title }}</title>
+    <title>Transparency Project - {{ title }}</title>
     {% else %}
-    <title>Transparency USA</title>
+    <title>Transparency Project</title>
     {% endif %}
   </head>
-
   <body>
     <header class="site-header">
       <div class="d-flex" id="wrapper">
         <div id="page-content-wrapper">
           <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-	    <a class="navbar-brand" href="{{ url_for('router.home') }}">Transparency</a>
+	    <a class="navbar-brand" href="{{ url_for('router.home') }}">Transparency Project</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -49,19 +48,16 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link americaRed" id="nav-home" href="{{ url_for('router.home') }}">Home</a>
-                </li>
                 <li class="nav-item">
-                  <a class="nav-link americaWhite" id="nav-singleCandidate" href="{{ url_for('router.single') }}"
-                    >Single</a
+                  <a class="nav-link americaRed" id="nav-singleCandidate" href="{{ url_for('router.candidate_dashboard') }}"
+                    >Candidate Dashboards</a
                   >
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link americaBlue" id="nav-duoCandidate" href="#">Dual</a>
-                </li>
+		</li> -->
                 <li class="nav-item">
-                  <a class="nav-link americaDarkBlue" id="nav-multiCandidate" href="#">Multi</a>
+                  <a class="nav-link americaDarkBlue" id="nav-multiCandidate" href="#">National Report</a>
                 </li>
               </ul>
             </div>
@@ -76,7 +72,7 @@
    <footer class="card-footer text-muted">
       <div class="container">
         <small>
-          Copyright &copy; 2020, TransparencyUSA
+          Copyright &copy; 2020, Transparency Project
         </small>
       </div>
     </footer>

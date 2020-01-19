@@ -11,8 +11,8 @@ google_trends_addr = f"{ip_address}:{google_trends}"
 def home():
     return render_template('home.html', title="Transparency USA", iframesrc=overall_facebook_spending_chloro_addr)
 
-@router.route("/single", methods=["GET", "POST"])
-def single():
+@router.route("/candidate_dashboard", methods=["GET", "POST"])
+def candidate_dashboard():
     return render_template('single_candidate.html', title="Transparency USA - Single Candidates", iframesrc=google_trends_addr)
 
 
