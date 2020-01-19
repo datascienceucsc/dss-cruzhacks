@@ -19,7 +19,7 @@ def update_fig(col, dataframe, str):
         locations=dataframe['Country_Subdivision_Primary'], # Spatial coordinates
         z = dataframe[col].astype(float), # Data to be color-coded
         locationmode = 'USA-states', # set of locations match entries in `locations`
-        colorscale = [''],
+        colorscale = 'inferno',
         colorbar_title = str,
         colorbar = {
             'xpad' : 0
