@@ -1,3 +1,5 @@
+# candidate_dashboard.py
+
 import os
 import pandas as pd 
 import plotly
@@ -8,7 +10,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 from config import data_dir
 
-#--- data wrangling ---
+#--- data wrangling ----------------------------------------------------------
 
 # data for media
 
@@ -81,6 +83,7 @@ c_d = {
 }
 
 def aggregate_rows(df):
+
     aggregation_functions = {'Spend_USD':'sum'}
     df_new = df.groupby(df['Week_Start_Date'], as_index=False).aggregate(aggregation_functions)
     return df_new
@@ -88,7 +91,8 @@ def aggregate_rows(df):
 for key in c_d:
     c_d[key] = aggregate_rows(c_d[key])
 
-#--- dashboard logic ---
+
+#--- dashboard logic ---------------------------------------------------------
 
 # candidate selection options
 candidates = pd.read_csv(os.path.join(data_dir, 'candidates.csv'), sep = ';')
@@ -97,34 +101,46 @@ drop_down_options = [{'label' : person, 'value' : person}
 
 # plotting social media numbers
 def draw_socmedia(candidate):
-    colors = ['#FB6A84','#095E67', '#12CAD6']
+    
+    colors = ['#12CAD6', '#BEF0F3', '#FB6A84']
+    # colors = ['#FA163F','#E4F9FF', '#0FABBC']
     media_labels = ['Facebook', 'Instagram', 'Twitter']
     media_values = socmedia.loc[candidate].values
     data = go.Pie(labels = media_labels, values = media_values, hole = .5,
         hoverinfo = 'label+percent', textinfo = 'value'
     )
     layout = go.Layout(
-        title = {'text':  'Follower Counts for {}'.format(candidate),
+        title = {'text':  'Follower Counts',
                  'x': .5},
-        template = 'plotly_dark'
+        template = 'plotly_dark',
     )
     fig = go.Figure(data, layout)
     return fig
 
 # plotting favorability polls
 def draw_approvals(candidate):
+
     curr_approvals = approvals[approvals['politician'].isin([candidate])]
     data = go.Scatter(
         x = curr_approvals['start_date'], y = curr_approvals['tot_favorable'],
         mode = 'markers', marker_color = '#BEF0F3',
-        marker_size = curr_approvals['tot_favorable']
+        marker_size = curr_approvals['tot_favorable'],
+        marker = {
+            'sizeref' : 5,
+            'sizemin' : 1
+        }
     )
     layout = go.Layout(
-        yaxis = dict(title_text = 'Percentage', range = [0,100]),
-        xaxis = dict(showgrid = False),
-        title = {"text": "Proportion of Americans Favorable to {}".format(candidate),
-                'x': .5},
-        template = 'plotly_dark'
+        yaxis = {
+            'title_text' : 'Favorable Opinion (%)',
+             'range' : [0,100]
+        },
+        xaxis = {'showgrid' : False},
+        title = {
+            "text": "Portion of Americans with Favorable Opinion",
+            'x': .5
+        },
+        template = 'plotly_dark',
     )
     fig = go.Figure(data = data, layout = layout)
     return fig
@@ -133,21 +149,27 @@ def draw_approvals(candidate):
 def draw_gtrends(candidate):
     data = go.Scatter(
         x = gtrends['date'], y = gtrends[candidate],
-        mode = 'lines', hoverinfo = 'y',
+        mode = 'lines',
         fill = 'tozeroy',
-        marker_color = '#12CAD6')
+        marker_color = '#12CAD6'
+    )
     layout = go.Layout(
-        yaxis = dict(title_text = 'Interest (out of 100)',
-        range = [0,100]),
-        xaxis = dict(showgrid = False),
-        title = {'text': 'Weekly Interest for {}'.format(candidate),
-                 'x': .5},
-        template = 'plotly_dark')
+        yaxis = {'title_text' : 'Index (max 100)',
+                 'range' : [0,100]
+        },
+        xaxis = {'showgrid' : False},
+        title = {
+            'text': 'Weekly Google Trends Index',
+            'x': .5
+        },
+        template = 'plotly_dark'
+    )
     fig = go.Figure(data = data, layout = layout)
-    return fig
+    return fig 
 
 # plotting google ads spending
 def draw_gads(candidate):
+
     dataframe = c_d[candidate]
     data = go.Scatter(
         x = dataframe['Week_Start_Date'],
@@ -156,60 +178,80 @@ def draw_gads(candidate):
         fill = 'tozeroy'
     )
     layout = go.Layout(
-
         xaxis_range = ['2018-12-01','2020-01-05'],
-        template = 'plotly_dark',
         yaxis = {
-            'type':'log'
+            'type':'log',
+            'title_text': 'Daily Spending ($)'
         },
-        xaxis = {
-            'showgrid':False
-        },
+        xaxis = {'showgrid':False},
         title = {
-            'text': '{}\'s Daily Ad Spending'.format(candidate),
+            'text': 'Daily Ad Spending',
             'x': .5
         },
+        template = 'plotly_dark',
     )
     fig = go.Figure(data = data, layout = layout)
     return fig
 
 app = dash.Dash(__name__,
-        external_stylesheets=["http://34.94.120.23/static/graph.css"])
+        external_stylesheets  =["http://34.94.120.23/static/graph.css"])
 
 app.layout = html.Div([
-    html.H1(id = 'candidate_name' 
+
+    html.Div(
+        html.H1('Candidate', id = 'candidate_name'),
+        style = {'width': '48%', 'display': 'inline-block'}
     ),
 
-    dcc.Dropdown(
-        id = 'candidate_drop',
-        options = drop_down_options,
-        value = 'Joe Biden'
+    html.Div(
+        dcc.Dropdown(
+            id = 'candidate_drop',
+            options = drop_down_options,
+            value = 'Joe Biden'
+        ),
+        style = {'width': '48%', 'display': 'inline-block'}
     ),
 
-    html.H2('Social Media'),
+    html.H2(id = 'popularity'),
 
-    dcc.Graph(id = 'socmedia',
-              figure = draw_socmedia('Joe Biden'),
-              config = {'displayModeBar' : False}),
+    html.Div(
+        dcc.Graph(
+            id = 'socmedia',
+            figure = draw_socmedia('Joe Biden'),
+            config = {'displayModeBar' : False}
+        ), 
+        style = {'width': '48%', 'display': 'inline-block'}
+    ),
 
-    html.H2('Approval'),
+    html.Div(
+        dcc.Graph(
+            id = 'approvals',
+            figure = draw_approvals('Joe Biden'),
+            config = {'displayModeBar' : False}
+        ),
+        style = {'width': '48%', 'display': 'inline-block'}
+    ),
 
-    dcc.Graph(id = 'approvals',
-              figure = draw_approvals('Joe Biden'),
-              config = {'displayModeBar' : False}),
+    html.H2(id = 'presence'),
 
-    html.H2('Google Ads'),
+    html.Div(
+        dcc.Graph(
+            id = 'gtrends',
+            figure = draw_gtrends('Joe Biden'),
+            config  = {'displayModeBar' : False}
+        ),
+        style = {'width': '48%', 'display': 'inline-block'}
+    ),
 
-    dcc.Graph(id = 'gads',
-              figure = draw_gads('Joe Biden'),
-              config  = {'displayModeBar' : False}),
-
-    html.H2('Google Trends'),
-
-    dcc.Graph(id = 'gtrends',
-              figure = draw_gtrends('Joe Biden'),
-              config  = {'displayModeBar' : False})
-])
+    html.Div(
+        dcc.Graph(
+            id = 'gads',
+            figure = draw_gads('Joe Biden'),
+            config  = {'displayModeBar' : False}
+        ), 
+        style = {'width': '48%', 'display': 'inline-block'}
+    )
+ ])
 
 @app.callback(
     Output('socmedia', 'figure'),
@@ -240,11 +282,18 @@ def update_gtrends(candidate):
     return(draw_gtrends(candidate))
 
 @app.callback(
-    Output('candidate_name', 'children'),
+    Output('popularity', 'children'),
     [Input('candidate_drop', 'value')]
 )
-def update_title(candidate):
-    return candidate
+def update_title_pop(candidate):
+    return '{}\'s Popularity'.format(candidate)
+
+@app.callback(
+    Output('presence', 'children'),
+    [Input('candidate_drop', 'value')]
+)
+def update_title_pres(candidate):
+    return '{}\'s Google Presence'.format(candidate)
 
 if __name__ == '__main__':
-    app.run_server(debug = False, host="0.0.0.0", port=8051)
+    app.run_server(debug=False, host="0.0.0.0", port=8051)
