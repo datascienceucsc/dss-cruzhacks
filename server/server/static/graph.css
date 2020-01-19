@@ -9,3 +9,7 @@ div#dropdown {
   margin-right: auto;
   margin-bottom: 2em;
 }
+
+h1, h2, h4 {
+  color: white !important;
+}

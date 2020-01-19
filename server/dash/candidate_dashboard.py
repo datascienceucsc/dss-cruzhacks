@@ -35,7 +35,12 @@ def draw_approvals(candidate):
         yaxis = dict(title_text = 'Percentage', range = [0,100]),
         xaxis = dict(showgrid = False),
         title = "Proportion of Americans Favorable to {}".format(candidate),
-        template = 'plotly_dark'
+        template = 'plotly_dark',
+        font = {
+            "family": "Verdana, Sans-Serif",
+            "size": 15,
+            "color": "#ffffff"
+        },
     )
     fig = go.Figure(data = data, layout = layout)
     return fig
@@ -52,7 +57,13 @@ def draw_gtrends(candidate):
             range = [0,100]),
         xaxis = dict(showgrid = False),
         title = 'Interest for {}'.format(candidate),
-        template = 'plotly_dark')
+        template = 'plotly_dark',
+        font = {
+            "family": "Verdana, Sans-Serif",
+            "size": 15,
+            "color": "#ffffff",
+        },
+        )
     fig = go.Figure(data = data, layout = layout)
     return fig
 
