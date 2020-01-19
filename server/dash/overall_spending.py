@@ -52,13 +52,18 @@ def update_fig(col, dataframe):
         xaxis_title = 'Political Organization',
         yaxis_title = 'Amount Spent on Advertising (USD)',
         template = 'plotly_dark',
+        font = {
+            "family": "Verdana, Sans-Serif",
+            "size": 15
+            },
     )
     fig = go.Figure(data=data, layout=layout)
     return fig
 
 data2 = go.Bar(name='Number of Ads in Library', x=data_max['Page Name'], y = data_max['Number of Ads in Library'])
 
-app = dash.Dash(__name__)
+app = dash.Dash(__name__,
+        external_stylesheets=["http://34.94.120.23/static/graph.css"])
 
 app.layout = html.Div(children=[
     dcc.Dropdown(
