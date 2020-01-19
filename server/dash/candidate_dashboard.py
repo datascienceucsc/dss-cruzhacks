@@ -137,7 +137,7 @@ def draw_approvals(candidate):
         },
         xaxis = {'showgrid' : False},
         title = {
-            "text": "Portion of Americans with Favorable Opinion",
+            "text": "Poll Results",
             'x': .5
         },
         template = 'plotly_dark',
@@ -214,6 +214,8 @@ app.layout = html.Div([
 
     html.H2(id = 'popularity'),
 
+    html.Hr(),
+
     html.Div(
         dcc.Graph(
             id = 'socmedia',
@@ -233,6 +235,8 @@ app.layout = html.Div([
     ),
 
     html.H2(id = 'presence'),
+
+    html.Hr(),
 
     html.Div(
         dcc.Graph(
