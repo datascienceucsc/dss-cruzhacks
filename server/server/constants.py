@@ -6,4 +6,4 @@ ip_address = "http://34.94.120.23"
 
 overall_facebook_spending = 8050
 overall_facebook_spending_chloro = 8052
-google_trends = 8051
+dashboard = 8051
