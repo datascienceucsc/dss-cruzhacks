@@ -37,16 +37,16 @@ a.list-group-item {
   padding-bottom: 1rem;
 }
 
-img.card-img-top{
+img.card-img-top {
   height: 370px;
   width: 286px;
 }
 
-div.card.text-white.bg-dark.mb-3{
+div.card.text-white.bg-dark.mb-3 {
   margin: auto;
 }
 
-.card-footer{
+.card-footer {
   padding: none !important;
 }
 
@@ -54,7 +54,7 @@ div.card.text-white.bg-dark.mb-3{
   background: none;
 }
 
-.jumbotron.text-center{
+.jumbotron.text-center {
   height: 90vh;
 }
 
@@ -86,16 +86,16 @@ div.card.text-white.bg-dark.mb-3{
   margin-top: 32px;
 }
 
-a.btn.btn-outline-danger.btn-lg{
+a.btn.btn-outline-danger.btn-lg {
   margin-top: 4.5rem;
   font-size: 2.5rem;
 }
 
-#startOfContent{
+#startOfContent {
   padding-top: 56px;
 }
 
-#startOfContent{
+#startOfContent {
   padding-top: 56px;
 }
 
@@ -118,11 +118,11 @@ a.btn.btn-outline-danger.btn-lg{
   background-color: #111;
 }
 
-#nav-singleCandidate{
+#nav-singleCandidate {
   outline: 0;
 }
 
-#nav-multiCandidate{
+#nav-multiCandidate {
   outline: 0;
 }
 
