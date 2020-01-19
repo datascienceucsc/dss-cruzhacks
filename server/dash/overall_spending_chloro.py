@@ -19,7 +19,7 @@ def update_fig(col, dataframe, str):
         locations=dataframe['Country_Subdivision_Primary'], # Spatial coordinates
         z = dataframe[col].astype(float), # Data to be color-coded
         locationmode = 'USA-states', # set of locations match entries in `locations`
-        colorscale = 'Blues',
+        colorscale = [''],
         colorbar_title = str,
         colorbar = {
             'xpad' : 0
@@ -28,6 +28,7 @@ def update_fig(col, dataframe, str):
     )
     layout = go.Layout(
         geo_scope='usa', # limite map scope to USA
+        template = 'plotly_dark'
     )
     fig = go.Figure(data=data, layout=layout)
     return fig
