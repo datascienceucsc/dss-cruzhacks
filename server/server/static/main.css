@@ -241,3 +241,7 @@ a.list-group-item {
     top: 30px;
   }
 }
+
+p.desc {
+  color: white;
+}
