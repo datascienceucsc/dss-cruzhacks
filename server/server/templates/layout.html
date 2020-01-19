@@ -66,10 +66,15 @@
               </ul>
             </div>
           </nav>
-
           <div class="container display-box" id="home">
-            <div class="container-fluid" id="mainPicture"></div>
-            <div class="container">
+            <div class="container-fluid row align-items-end" id="mainPicture">
+              <div class="col">
+                <a href="#startOfContent">
+                  <img src="../static/imgs/arrow-bar-bottom.svg" alt="" width="100%" height="100%" title="Bootstrap">
+                </a>
+              </div>
+            </div>
+            <div class="container" id="startOfContent">
               {% block content %}
               {% endblock %}
             </div>

@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 div.row {
   margin: 1rem 0rem;
 }
@@ -80,13 +84,44 @@ a.list-group-item {
 }
 
 #mainPicture {
-  height: 500px;
-  background: url("../static/imgs/election.jpg") no-repeat center center fixed;
+  background: url("../static/imgs/votingSticker.jpg") no-repeat center center
+    fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   border-radius: 0px;
+  height: 100vh;
+  margin: 0rem 0rem !important;
+}
+
+#mainPicture div.col {
+  text-align: center;
+}
+
+#mainPicture div.col a {
+  height: 8rem;
+  width: 8rem;
+  background: none;
+  display: inline-block;
+  transition: all 0.5s ease;
+  margin-bottom: 3rem;
+}
+
+#mainPicture div.col a:hover {
+  height: 8rem;
+  width: 8rem;
+  background: none;
+  display: inline-block;
+  margin-bottom: 4.5rem;
+}
+
+#mainPicture div.col div:hover {
+  height: 8rem;
+  width: 8rem;
+  background: none;
+  display: inline-block;
+  transition: all 0.5s ease;
 }
 
 @media (min-width: 768px) {
