@@ -99,9 +99,19 @@ def draw_approvals(candidate):
     layout = go.Layout(
         yaxis = dict(title_text = 'Percentage', range = [0,100]),
         xaxis = dict(showgrid = False),
+<<<<<<< HEAD
         title = {"text": "Proportion of Americans Favorable to {}".format(candidate),
                 'x': .5},
         template = 'plotly_dark'
+=======
+        title = "Proportion of Americans Favorable to {}".format(candidate),
+        template = 'plotly_dark',
+        font = {
+            "family": "Verdana, Sans-Serif",
+            "size": 15,
+            "color": "#ffffff"
+        },
+>>>>>>> 5ebf64bac0ee96ce4c22330fbe02c94dbce26fcd
     )
     fig = go.Figure(data = data, layout = layout)
     return fig
@@ -117,6 +127,7 @@ def draw_gtrends(candidate):
         yaxis = dict(title_text = 'Interest (out of 100)',
             range = [0,100]),
         xaxis = dict(showgrid = False),
+<<<<<<< HEAD
         title = {'text': 'Weekly Interest for {}'.format(candidate),
                  'x': .5},
         template = 'plotly_dark')
@@ -151,6 +162,21 @@ def draw_gads(candidate):
     return fig
 
 app = dash.Dash(__name__)
+=======
+        title = 'Interest for {}'.format(candidate),
+        template = 'plotly_dark',
+        font = {
+            "family": "Verdana, Sans-Serif",
+            "size": 15,
+            "color": "#ffffff",
+        },
+        )
+    fig = go.Figure(data = data, layout = layout)
+    return fig
+
+app = dash.Dash(__name__,
+                external_stylesheets=["http://34.94.120.23/static/graph.css"])
+>>>>>>> 5ebf64bac0ee96ce4c22330fbe02c94dbce26fcd
 
 app.layout = html.Div([
     html.H1(id = 'candidate_name' 
