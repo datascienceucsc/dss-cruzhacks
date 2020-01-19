@@ -52,6 +52,7 @@ div.card.text-white.bg-dark.mb-3{
 
 .jumbotron {
   background: none;
+  height: 80vh;
 }
 
 .nav-link {
