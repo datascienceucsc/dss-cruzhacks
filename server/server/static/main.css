@@ -132,7 +132,7 @@ a.btn.btn-outline-danger.btn-lg {
 }
 
 #mainPicture {
-  background: url("../static/imgs/AmericanFlag.jpg") no-repeat center center
+  background: url("https://i.imgur.com/zzfoIahr.jpg") no-repeat center center
     fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
