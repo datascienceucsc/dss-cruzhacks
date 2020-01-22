@@ -2,8 +2,7 @@
 *Data Science Slugs @ Cruzhacks 2020* -
 *Sean Breckenridge, Julian Lehrer, Oasys Okubo, Garrett Leising and Anders Poirel*
 
-![Website Snapshot](https://i.imgur.com/MWG9lS5.jpg)
-
+<img src="https://raw.githubusercontent.com/Jswig/dss-cruzhacks/master/.github/demo.gif">
 
 The number one source for transparency, brah
 
