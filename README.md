@@ -14,6 +14,8 @@ Clone into an empty directory, and make sure to
 
 ✔ Install [pipenv](https://github.com/pypa/pipenv)
 
+✔ Install [screen](https://www.gnu.org/software/screen/)
+
 ✔ Run `pipenv install` in one of the app directories.
 
 To run the server:
