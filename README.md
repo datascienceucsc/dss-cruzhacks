@@ -4,7 +4,10 @@
 
 <img src="https://raw.githubusercontent.com/Jswig/dss-cruzhacks/master/.github/demo.gif">
 
-Won first place at CruzHacks
+## Awards
+
+- 1st place winner overall at Cruzhacks 2020
+- 2nd place for Google Cloud at Cruzhacks 2020
 
 The number one source for transparency, brah
 
