@@ -22,10 +22,10 @@ To run the server:
 ```
 cd server
 pipenv install
-pipenv shell
-export FLASK_ENV=development
-flask run
+./restart_server
 ```
+
+Requires the ports 8050, 8051, and 8052 to be open for the graph instances. The domain name was also hardcoded in a couple places. In [config](https://github.com/Jswig/dss-cruzhacks/blob/master/server/server/constants.py), and the `external_stylesheets` argument in each [dash](https://github.com/Jswig/dss-cruzhacks/tree/master/server/dash) instance.
 
 ## Project Structure
 
