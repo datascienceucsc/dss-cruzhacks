@@ -4,6 +4,8 @@
 
 <img src="https://raw.githubusercontent.com/Jswig/dss-cruzhacks/master/.github/demo.gif">
 
+Won first place at CruzHacks
+
 The number one source for transparency, brah
 
 ## Installation
