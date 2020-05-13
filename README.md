@@ -6,8 +6,8 @@
 
 ## Awards
 
-- 1st place winner overall at Cruzhacks 2020
-- 2nd place for Google Cloud at Cruzhacks 2020
+- 🥇 1st place winner overall at Cruzhacks 2020
+- 🥈2nd place for Google Cloud at Cruzhacks 2020
 
 The number one source for transparency, brah
 
